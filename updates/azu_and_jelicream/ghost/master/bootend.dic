@@ -101,7 +101,7 @@ OnFirstBoot : all
  	{
 		//---- This is dialogue for when the user uninstalls the ghost for whatever reason, then reinstalls them again. They will run this dialogue instead of their normal dialogue above. You can change this to reflect the fact the user's uninstalled your ghost once, or you can make it the same as the above, it's up to you. You'll see this if you try to run OnFirstBoot using ![raise] without the extra 0 as mentioned above.
  		{
- 		"\1\s[10]\0\s[0]This is the OnFirstBoot dialogue if we've been uninstalled and reinstalled.\e"
+ 		"\0\s[0]\1\s[18]Oh, I thought you were done with us?\e"
 		}
  	}
 }
@@ -507,7 +507,7 @@ OnClose
 
  OnWindowStateMinimize
  {
-	"\0\s[0]This dialogue means we're being minimized.\w8\1\s[10]Gonna get tiny for a bit.\e"
+	"\1\s[18]Gonna get tiny for a bit.\e"
 }
 
 
@@ -517,7 +517,7 @@ OnClose
 
 OnWindowStateRestore
  {
-	"\0\s[0]This dialogue means we were minimized.\w8\1\s[10]Then brought back up.\e"
+	"\1\s[10]\0\s[0]Hi again, heh!\e"
 }
 
 

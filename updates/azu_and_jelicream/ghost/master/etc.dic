@@ -190,7 +190,7 @@ OnVanishSelected
 
 OnVanishCancel
 {
-	"\0\s[2]Oh! \w2\s[5]Yay!.\e"
+	"\0\s[2]Oh! \w2\s[5]Yay!\e"
 }
 
 //--OnVanishButtonHold
@@ -207,7 +207,7 @@ OnVanishButtonHold
  
 OnVanished
  {
-	"\0\s[0]\1\s[10]%(reference0) has been uninstalled.\w8\0\s[0]Harsh.\e"
+	"\1\s[0]\0\s[3]Oh, \w2you uninstalled %(reference0)...\w8\1\s[18]Harsh.\e"
 	
 	//reference0 here is the name of the other ghost.
 }
@@ -304,9 +304,9 @@ OnBIFFFailure
  
 OnUpdateBegin
  {
-	"\0\s[0]Starting the update process.\w8\e"
+	"\0\s[5]Starting the update process!\w8\e"
 	
-	"\1\s[10]Another message for starting the update process.\w8\0\s[0]Hope you read the directions properly.\w8\e"
+	"\1\s[10]Im starting the update process now.\w8\e"
  }
 
  //---- OnUpdateReady ---------------------------------------------------------
@@ -332,7 +332,7 @@ OnUpdateComplete
  	{
  		"\1\s[10]There are no new files.\e"
 		
-		"\1\s[10]This is another message about there being no new files to update with.\e"
+		"\0\s[8]There aren't any new files.\e"
 	}
  	else //if the ghost has updated successfully
 	{
@@ -371,13 +371,12 @@ OnUpdate.OnDownloadBegin
  {
  	if "aitalk" _in_ reference0 //this is checking to see what kind of files are being downloaded. In this case, it's looking for files called aitalk in the download queue. If you want to have a specialized bit of dialogue for each type of file, you can expand this with elseifs and by replacing aitalk with whatever file you have in mind. Keep in mind my warning above though.
  	{
- 		"\0\s[0]We are going to download more dialogue.\w8\1\s[10]It's in the aitalk file.\e"
+ 		"\0\s[5]We're gonna download more dialogue!\w8\1\s[10]It's in the aitalk file.\e"
  	}
  	else //for files not specified above
  	{
-	"\1\s[10]This is dialogue for finding a new file.\e"
+	"\1\s[10]Found a new file.\e"
 	
-	"\0\s[0]This is another bit of dialogue for finding a new file.\e"
 	}
  }
 
@@ -394,7 +393,7 @@ OnUpdate.OnMD5CompareBegin
  
 OnUpdate.OnMD5CompareComplete
  {
-	"\0\s[0]MD5 check good.\e"
+	"\0\s[5]MD5 check is all good!\e"
 }
 
  //---- OnUpdate.OnMD5CompareFailure ---------------------------------------------------
@@ -402,7 +401,7 @@ OnUpdate.OnMD5CompareComplete
  
 OnUpdate.OnMD5CompareFailure
  {
-	"\0\s[0]The MD5 values don't match.\w8\e"
+	"\0\s[3]The MD5 values don't match.\w8\e"
  }
 
  
@@ -509,7 +508,7 @@ OnHeadlinesenseFailure
  
 OnUpdatedataCreating
  {
-	"\1\s[10]Creating the updates2.dau file.\e"
+	"\1\s[10]Creating the updates2.dau file...\e"
  }
 
  //---- OnUpdatedataCreated -------------------------------------------------------------
@@ -517,7 +516,7 @@ OnUpdatedataCreating
  
 OnUpdatedataCreated
  {
-	"\0\s[0]Successfully created updates2.dau.\e"
+	"\0\s[0]Successfully created updates2.dau!\e"
  }
 
  //---- OnNarCreating ------------------------------------------------------------------
@@ -525,7 +524,7 @@ OnUpdatedataCreated
  
 OnNarCreating
  {
-	"\0\s[0]Creating the .nar file.\e"
+	"\0\s[0]Creating the .nar file...\e"
  }
 
  //---- OnNarCreated -------------------------------------------------------------------
@@ -533,7 +532,7 @@ OnNarCreating
  
 OnNarCreated
  {
-	"\0\s[0]Successfully created '%(reference0)'.\e"
+	"\0\s[0]Successfully created '%(reference0)'!\e"
 	//reference0 here will be the filename of the nar you just created. It should drop the nar in the folder where all your ghosts are listed, ssp\ghost\.
  }
 

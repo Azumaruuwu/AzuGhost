@@ -406,12 +406,6 @@ internetchain
 	"\0\s[5]See a man beheaded, get offended see a shrink, \n\n[half]\s[22]Show us pictures of your children, \s[23]tell us every thought you think! \n\s[22]Start a rumor, \s[23]buy a broom \s[21]or send a death threat to a boomer \n \s[22]Or DM a girl and groom her, \s[23]do a zoom or find a tumor in your- \n\n[half]\s[5]Here's a healthy breakfast option!\n\s[21]You should kill your mom! \n\s[22]Here's why women never *FUN TIME* with you!\n\s[23]Here's how you can build a bomb!\n\n[half]\s[1]Which Power Ranger are you?\w4\s[20] Take this quirky quiz! \s[22]Obama sent\s[23] the immig\s[22]rants to vaccin\s[23]ate your kids\s[22]!\w9\w9\w9\1\s[19]...\w2 Are you don-\1\s[12]\0\n\n[half]\s[5] Can I int\1\s[19]\0\s[5]erest you in everything, \w2\s[20]all of the time? \w\s[6]\nA little bit of everything, \w2all of the time? \s[22]\w4\n\nApathy's a tragedy and \w1\s[23]bordom is a crime. \w2\n\n\s[20]Can I interest you in everything, \w3\s[21]all of the time?\w4\s[0]\w9\w9\1\s[10]\n\nDo you want me to applaud you or something?\w8\1\s[19]\0\s[6]\n\nYes!\e:chain=end"
 }}CHAIN
 
-//interchain
-//{{CHAIN
-	//"\0\s[5]Welcome to the internet. \w8\s[6]Have a look around!\w4\1\s[18]Huh? \w2\0\n\s[21]Anything that \1\s[10]\0\s[21]brain of yours can think of can be found...\w2\n\n\s[6]We've got mountains of content.\w1\1\s[13]Um...\w1\0\n\n[half]\s[22]Some better, \w1\s[23]some worse! \n\n\w8\s[8]If none of it's of interesest to you, \w1\s[20]you'd be the first!\w8\w4\n\n[half]\s[5]Welcome to the internet!\w1\1\s[51]\0\s[6] Come and take a seat...\w1\n\nWould you like to see the news \s[20]or any famous womens feet?\w1\1\s[14] I..\0\n\s[22]There's no need to panic! \w3\s[21]This isnt a test... \n\n\w1\s[6]Heh, \w6\s[5]Just nod or shake your head and \s[21]we'll do the rest!\w4\1\s[10]We?- \w1\0\n\n\s[5]\1\s[12]\0\s[5]\f[height,20]Welcome!\f[height,default]\1\s[10]\0\s[0] to the internet! \w4\s[5]What would you prefer? \w1\1\s[51]\0\n\n\s[6]Would you like to fight for civil rights \1\s[14]\0\s[20]or tweet a racial slur?\w1\1\n\nWhat??? \0\n\n\s[5]Be happy! \s[20]Be horny! \w2\s[7]Be burning with RAGE!\1\s[14]God help me..\w1\0\s[5] We got a million different ways to engage!\e"
-	
-	//"\0\s[6]Welcome to the internet! \w8\n\n\s[23]Put your cares aside!\e:chain=end"
-//}}CHAIN
 	
 //You can make chains as long or as shot as you want! Just make sure to end the chain when you're done.
 

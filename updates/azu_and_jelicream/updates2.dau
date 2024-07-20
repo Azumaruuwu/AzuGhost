@@ -4,7 +4,7 @@ ghost/master/aitalk.diccd6b5b39e8dbe2bece5637d317fa8b28size=45196date=2024-07
 ghost/master/anchor.dic201df4a2ecfa8a85feb258da396a33e4size=5180date=2023-09-28T21:34:06
 ghost/master/bootend.dicd157c90529b686d11bc211ffba8facf5size=38478date=2024-07-20T09:35:12
 ghost/master/commu.dic9f85638e33dcf678c75f9f7f9957bff5size=6739date=2024-07-18T10:10:27
-ghost/master/descript.txtf677aa19074512bc61a57a6bfbd718dfsize=2660date=2024-07-18T09:18:35
+ghost/master/descript.txtf677aa19074512bc61a57a6bfbd718dfsize=2660date=2024-07-20T09:44:10
 ghost/master/etc.dic597234a1279a7ee37bb6305d91311051size=37665date=2024-07-20T00:44:20
 ghost/master/gomi.dll51fe9597398db01e684a0f9d52c63242size=13312date=2004-06-01T21:00:04
 ghost/master/gt_template.ico9b275939dbf11bd2ec5f4ef3e00fa06asize=1148date=2014-11-09T18:17:39
@@ -22,7 +22,7 @@ ghost/master/yaya_base/compatible.dic4f8b1e8c8c08dc44e70b1bd4f52a1affsize=4297
 ghost/master/yaya_base/config.dicd07874f4b1ba03ba111df8f2fa3cd6dbsize=2592date=2023-06-01T08:32:24
 ghost/master/yaya_base/optional.dicff4da728a656a8aa6a38939e654c51f2size=9953date=2023-06-01T08:32:24
 ghost/master/yaya_base/shiori3.dic18b395e9ffcd3fb772ded9046ed4b57csize=54846date=2023-06-01T08:32:24
-install.txt945309598581809eb402e96de33ebf15size=929date=2021-03-19T05:37:56
+install.txt253a4e9ef0b3e006a057111b184d8b44size=939date=2024-07-20T09:44:04
 readme.txte09e6aaab8328c1f3296407f35721ee8size=572date=2024-07-18T18:56:17
 shell/master/descript.txte39a182ec3f0bff4d56eecc7cb633d7fsize=5499date=2024-07-18T10:05:57
 shell/master/menu_background.pngee82ad72761d4837c3334f61ade1fbc5size=2775date=2014-11-03T10:22:30

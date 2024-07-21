@@ -136,7 +136,7 @@ RandomTalk : nonoverlap_pool
 	
 	//As you can see here, you can change your ghost's expression while they are speaking. This can make their expression vary dynamically depending on what they're talking about.
 	
-	//"\0\s[0]Remember, %(username)!\1\s[19]You're crazy.\w8\0\n\n[half]\s[6]Crazy-creative you mean!\e"
+	"\0\s[7]Remember, %(username)!\w4\n\n\s[0]If someone's real mean to you, \w2\s[5]find their house and steal all their left socks!\w8\1\s[19]You're crazy.\w8\0\n\n[half]\s[6]Crazy-creative you mean!\e"
 	
 	//You can also change the side character's expression while the other character is talking. Note here that after the surprising statement, Triangle's pose is changed to s[12]. Then the focus is brought back to Girl with the \0 tag and she resumes talking. You can change focus without having the character actually say anything to accomplish just this effect.
 	
@@ -158,7 +158,7 @@ RandomTalk : nonoverlap_pool
 	
 	//Here's dialogue with all of their poses so you can see them in action. Note how the \s number changes for each of them. They don't have to match of course, you can have one character happy and one character sad and do whatever you like. These are just examples you can rewrite as you like with your own dialogue.
 	
-	"\1\s[13]Ughh, my neighbours are so loud. \w8\0\s[2]Really? \w8\1\n\s[19]Yeah, \0\s[3]\1\w2they're always complaining! \w4\n\n\s[18]Something about two \_a[https://www.youtube.com/watch?v=WchseC9aKTU]trucks\_a? \w8\n\s[19]I dunno...\e"
+	"\1\s[13]Ughh, my neighbours are so loud. \w8\0\s[2]Really? \w8\1\n\s[19]Yeah, \0\s[3]\1\w2they're always complaining! \w4\n\n\s[18]Something about \_a[https://www.youtube.com/watch?v=WchseC9aKTU]two trucks\_a? \w8\n\s[19]I dunno...\e"
 	
 	//You can use the \w tag to time your dialogue. \w goes from 1-9, although I usually leave it at 8 to be safe, and while you can't go above 9, you can layer \w tags to add up to higher numbers. Here, \w8 and \w6 combine to make 14.
 	
@@ -300,9 +300,7 @@ RandomTalk : nonoverlap_pool
 	
 	"\0\s[8]Rabbits live for 8 years, \w4Dogs live for 15 years... \w8\w8\n\n[half]\s[2]But turtles live for 150 years! \w4\s[6]Lesson learnt. \w8\1\s[10]... \w4 What's the lesson? \w8\0\n\n[half]\s[5]Stay inside and do nothing!\w4\1\n\n\s[19]of course.\e"
 	
-	
-	
-	//"\0\s[6]More dialogue to be replaced.\w8\1\s[15]Follow your heart and write some text!\e"
+	"\0\s[3]I kinda miss my old house. \w8\1\s[15]Oh I remember,\w4The one you always fell down the stairs of?\0\n\n\s[7]Hey! I never fell!\w8\1\n\n\s[10]Then what did you do?\w8\0\nI...\w4\s[6] attacked it!\w6\1\n\n\s[19]With your face?\w8\0\n\n\s[7]I'm talented!\e"
 	
 	
 	//--Multiple Responses
@@ -401,7 +399,7 @@ internetchain
 {{CHAIN
 	"\0\s[5]Welcome to the internet. \w8\s[6]Have a look around!\w4\1\s[18]Huh? \w2\0\n\s[21]Anything that \1\s[10]\0\s[21]brain of yours can think of can be found...\w2\n\n\s[6]We've got mountains of content.\w1\1\s[13]Um...\w1\0\n\n[half]\s[22]Some better, \w1\s[23]some worse! \n\n\w8\s[8]If none of it's of interesest to you, \w1\s[20]you'd be the first!\w8\w4\n\n[half]\s[5]Welcome to the internet!\w1\1\s[51]\0\s[6] Come and take a seat...\w1\n\nWould you like to see the news \s[20]or any famous womens feet?\w1\1\s[14] I..\0\n\s[22]There's no need to panic! \w3\s[21]This isnt a test... \n\n\w1\s[6]Heh, \w6\s[5]Just nod or shake your head and \s[21]we'll do the rest!\w4\1\s[10]We?- \w1\0\n\n\s[5]\1\s[12]\0\s[5]\f[height,20]Welcome!\f[height,default]\1\s[10]\0\s[0] to the internet! \w4\s[5]What would you prefer? \w1\1\s[51]\0\n\n\s[6]Would you like to fight for civil rights \1\s[14]\0\s[20]or tweet a racial slur?\w1\1\n\nWhat??? \0\n\n\s[5]Be happy! \s[20]Be horny! \w2\s[7]Be burning with RAGE!\1\s[14]God help me..\w1\0\s[5] We got a million different ways to engage!\e"
 	
-	"\0\s[6]\0\s[6]Welcome to the internet! \w8\s[20]Put your cares aside! \w4\n\n[half]\s[22]Here's a tip for straining pasta, \s[23]here's a 9 year old who died!\1\s[14]Oh my god... \0\n\s[21]We've got movies, \w2\s[20]and doctors, \w2\s[5]and fantasy spoooorts!! \w2\n\n\s[0]And a bunch of coloured pencil drawings of a \1\s[13]\0\s[0]bunch of the different characters in Harry Potter doing the do \f[height,20]\1\s[12]\0\s[5]WELCOME TO THE \1\s[51]\0\s[5]INTERNET!\f[height,default]\w4\n\n\s[0]Hold on to your socks, \w2\s[20]cus a random guy just kindly sent you photos of his \s[3]\f[height,15]\f[bold,true]\1\s[12]\0\s[3]*HOT DOG.*\f[bold,false]\f[height,default]\w1\n\n\s[3] They are grainy, \w1and offputting... \w1\s[1]He just sent you mooooore!\w1\1\s[10] \w2\1\s[12]\0\s[5] Don't act surprised, \s[20]you know \1\s[19]\0\s[20]you like it, \w1 you \f[height,15]\f[bold,true]*HOGDOG LOVER*!\f[height,default]\f[bold,false] w4\1\n\nI'm ignoring you.  \e"
+	"\0\s[6]\0\s[6]Welcome to the internet! \w8\s[20]Put your cares aside! \w4\n\n[half]\s[22]Here's a tip for straining pasta, \s[23]here's a 9 year old who died!\1\s[14]Oh my god... \0\n\s[21]We've got movies, \w2\s[20]and doctors, \w2\s[5]and fantasy spoooorts!! \w2\n\n\s[0]And a bunch of coloured pencil drawings of a \1\s[13]\0\s[0]bunch of the different characters in Harry Potter doing the do \f[height,20]\1\s[12]\0\s[5]WELCOME TO THE \1\s[51]\0\s[5]INTERNET!\f[height,default]\w4\n\n\s[0]Hold on to your socks, \w2\s[20]cus a random guy just kindly sent you photos of his \s[3]\f[height,15]\f[bold,true]\1\s[12]\0\s[3]*HOT DOG.*\f[bold,false]\f[height,default]\w1\n\n\s[3] They are grainy, \w1and offputting... \w1\s[1]He just sent you mooooore!\w1\1\s[10] \w2\1\s[12]\0\s[5] Don't act surprised, \s[20]you know \1\s[19]\0\s[20]you like it, \w1 you \f[height,15]\f[bold,true]*HOGDOG LOVER*!\f[height,default]\f[bold,false] \w4\1\n\nI'm ignoring you.  \e"
 	
 	"\0\s[5]See a man beheaded, get offended see a shrink, \n\n[half]\s[22]Show us pictures of your children, \s[23]tell us every thought you think! \n\s[22]Start a rumor, \s[23]buy a broom \s[21]or send a death threat to a boomer \n \s[22]Or DM a girl and groom her, \s[23]do a zoom or find a tumor in your- \n\n[half]\s[5]Here's a healthy breakfast option!\n\s[21]You should kill your mom! \n\s[22]Here's why women never *FUN TIME* with you!\n\s[23]Here's how you can build a bomb!\n\n[half]\s[1]Which Power Ranger are you?\w4\s[20] Take this quirky quiz! \s[22]Obama sent\s[23] the immig\s[22]rants to vaccin\s[23]ate your kids\s[22]!\w9\w9\w9\1\s[19]...\w2 Are you don-\1\s[12]\0\n\n[half]\s[5] Can I int\1\s[19]\0\s[5]erest you in everything, \w2\s[20]all of the time? \w\s[6]\nA little bit of everything, \w2all of the time? \s[22]\w4\n\nApathy's a tragedy and \w1\s[23]bordom is a crime. \w2\n\n\s[20]Anything and everything, \w3\s[21]all of the time?\w4\s[0]\w9\w9\1\s[10]\n\nDo you want me to applaud you or something?\w8\1\s[19]\0\s[6]\n\nYes!\e:chain=end"
 }}CHAIN

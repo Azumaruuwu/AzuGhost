@@ -4,7 +4,7 @@ balloon,C:\Users\briem\Downloads\balloon\jelly_and_shrooms\
 Char1.balloon.isleft,1
 inputbox.left,664
 balloon0.offset,132.-256
-scriptbox.left,763
+scriptbox.left,774
 Char0.centery,768
 Char2.centery,687
 balloon1.offset,9.-170
@@ -14,7 +14,7 @@ Char3.balloon.isleft,1
 Char.VirtualDesktop,418d049e-61c9-4bd5-b5fa-e2503c17ddb1
 Char2.center,693
 Char0.center,1271
-scriptbox.top,345
+scriptbox.top,139
 Char1.centery,768
 Char3.centery,685
 Char1.center,1055

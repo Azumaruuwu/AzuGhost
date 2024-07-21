@@ -1,6 +1,6 @@
 Template Readme - READ ME FIRST!.txt00736d87fdc4c792abd9112f4b9e5eb7size=6663date=2024-03-28T15:07:47charset=OSNative
 azu_and_jelicream_icon.icob8d3dbaa5b0ce57eeb204ced64126dc5size=100793date=2024-07-17T11:56:25
-ghost/master/aitalk.dic361d0cb069929e7a8f0f752487e6ca6csize=45362date=2024-07-21T14:34:18
+ghost/master/aitalk.dicb5510cec3ad8ae714894c5fe6c87e21csize=45629date=2024-07-21T17:33:30
 ghost/master/anchor.dic201df4a2ecfa8a85feb258da396a33e4size=5180date=2023-09-28T21:34:06
 ghost/master/bootend.dicd157c90529b686d11bc211ffba8facf5size=38478date=2024-07-20T09:35:12
 ghost/master/commu.dic9f85638e33dcf678c75f9f7f9957bff5size=6739date=2024-07-18T10:10:27
@@ -69,6 +69,12 @@ shell/master/surface1007.png793609366e91365daa475ee7e0deb1d7size=9862date=202
 shell/master/surface1008.png7b75e35a8d8ab609e510934da59a8586size=8248date=2024-07-20T13:54:44
 shell/master/surface1009.pngd23cb1e8565b38f865fb235917497496size=8498date=2024-07-20T14:17:22
 shell/master/surface1010.png7e7bf4a0f858fdf9e7207e3c31df95fasize=7537date=2024-07-20T14:17:31
+shell/master/surface1011.pnge3d234efd4dd8648767ff0f93ba66f81size=9700date=2024-07-21T17:13:36
+shell/master/surface1012.png913a16bc206d7c08a45eb4b30d188394size=8569date=2024-07-21T17:10:21
+shell/master/surface1015.png9c98bf5131491d6394f0a1c4e9da3b5csize=10290date=2024-07-21T17:52:01
+shell/master/surface1016.pngd9366fe9ba202e7d9553076230be5b94size=9242date=2024-07-21T17:52:03
+shell/master/surface1019.pnge7ba3ac67bf3d5689ea09e992b9f38ddsize=8406date=2024-07-21T16:49:43
+shell/master/surface1020.png074b338c4c8221097db16a3e3b994a2asize=6932date=2024-07-21T16:49:52
 shell/master/surface1101.png3c3f0b8a30fded56412988e7022e65eesize=2818date=2024-07-17T13:10:30
 shell/master/surface1102.png8f532aeaf61bc758d8bebbe6fe91a408size=3114date=2024-07-17T13:14:32
 shell/master/surface1103.png6376a3f990650648711cd715e06f9b07size=4468date=2024-07-19T22:42:52
@@ -79,13 +85,19 @@ shell/master/surface1107.pngc506b4af7d0e1ec7fc46bf4e53b4c993size=3091date=202
 shell/master/surface1108.png851e835a129a0481f8e68111abf5649bsize=3462date=2024-07-20T13:54:38
 shell/master/surface1109.png9203be7f0677237a3e13080fee82b9ebsize=3669date=2024-07-20T14:17:25
 shell/master/surface1110.pngb5c343564df6cfda32446f25905db3besize=3743date=2024-07-20T14:17:28
+shell/master/surface1111.pngafe7947ef33ea08ffc61b5fa14d22768size=4248date=2024-07-21T17:10:16
+shell/master/surface1112.pngcad95aa863824e9732db7e814e383a8dsize=4795date=2024-07-21T17:10:47
+shell/master/surface1113.png80d7405dca0402d510454a5b59d26de2size=4113date=2024-07-21T17:25:48
+shell/master/surface1114.pngb7160555c240ba0b7baf41a10917a6basize=4419date=2024-07-21T17:25:46
+shell/master/surface1115.pnga18f7c735a3e6b5d30d9265da6536668size=3774date=2024-07-21T17:50:57
+shell/master/surface1116.png793546c7fc1e52cf6bbbc8cc1f1cdacdsize=4010date=2024-07-21T17:51:53
 shell/master/surface1501.png3cccf0a256c0e5e41400af6216896505size=24964date=2024-07-20T00:29:50
 shell/master/surface1502.png146ff01a3b325ddadc165382017a413asize=22162date=2024-07-20T00:29:20
 shell/master/surface1503.pngd95d4440460624369431e9651ea4678asize=22404date=2024-07-20T13:54:47
 shell/master/surface1504.png38b2e993fc5a413b0fdf166a64774588size=19925date=2024-07-20T14:17:21
-shell/master/surface1505.png80be1428ca4c7fc86ad881e03ff6b744size=23055date=2024-07-17T15:36:13
-shell/master/surface1506.pngcd8c8ec2a2f29a95e0d4b5d308346d7asize=21500date=2024-07-17T15:49:09
-shell/master/surface1507.png923cef62bea0553f25749755bee0a0e6size=23419date=2024-07-17T16:02:59
+shell/master/surface1505.pngea8de5fecbf61966efee80dda8ffd096size=21654date=2024-07-21T17:10:18
+shell/master/surface1506.png83c3d7357ced041c91cc3a548e21effesize=20575date=2024-07-21T17:25:53
+shell/master/surface1507.png8cf1e6879d14639756478368b6ab4912size=22609date=2024-07-21T17:50:04
 shell/master/surface1508.png910ffee1c8950813b3b896abef97aac8size=23542date=2024-07-17T16:10:21
 shell/master/surface1509.png91fab5cca5113c073dab5fc05e643dccsize=21451date=2024-07-17T15:36:17
 shell/master/surface1520.png575d3a9c8532f2271074d3302ab4352csize=23355date=2024-07-18T12:55:52
@@ -106,7 +118,7 @@ shell/master/surface2507.png3d1074e1bfb681ea61677730522bf3a7size=24322date=20
 shell/master/surface2508.pnga024391063bad77d98a4f051f82f1157size=24329date=2024-07-17T21:53:08
 shell/master/surface2509.png0f1a15858b376b9d858c64256605da3fsize=24619date=2024-07-17T21:53:11
 shell/master/surface2551.png7f5317fb95961999d085818e7cad4044size=25306date=2024-07-18T13:38:34
-shell/master/surfaces.txtd96f8fcf86f519e9643e81d025469b28size=47394date=2024-07-20T14:18:37
+shell/master/surfaces.txt972758083cae9cfaa5ad424fafeb7f29size=48822date=2024-07-21T17:53:19
 shell/master/surfacetable.txt4ff5115326eee6c4d4b84499bc807620size=3185date=2024-07-18T13:25:06
 shell/master/thumbnail.png877c84e28e8b06098346f85ebabefd60size=39843date=2024-07-17T17:09:43
 thumbnail.png877c84e28e8b06098346f85ebabefd60size=39843date=2024-07-17T17:09:43

@@ -212,7 +212,7 @@ RandomTalk : nonoverlap_pool
 	//Note here that instead of ending the dialogue with the normal end tag of \e, it ends with \e:chain=achain. This will link down below to a chunk of code outside RandomTalk called achain. You can scroll down and find it now if you want. You can name your chain anything you want, it'd just follow the same format of \e:chain=yourchainsname. Once a dialogue has entered a chain, they won't say any other random dialogue until the chain is finished.
 	
 	//"\0\s[0]This will lead to the second piece of chained dialogue.\w8\1\s[10]This will have another chain attached to it.\e:chain=anotherchain"
-	
+	"\0\s[5]Hehe, here's a \_a[https://www.youtube.com/watch?v=Wo8yhLMemGk]link!\_a \e:chain=anotherchain"
 	"\0\s[8]So, wait. \w4If we're on a computer.. \w8\s[5]does that mean we're technicallly on the internet too?\w8\1\s[15]What brought this up?\w8\0\n\n[half]\s[2]Oh! \w4\s[6]\_a[https://www.youtube.com/watch?v=k1BneeJTDcU]Nothing...\_a  \e:chain=internetchain"
 	//Here, this will link to a different chain to continue the conversation. You can scroll down to the section on chains to see this in action.
 	
@@ -390,8 +390,6 @@ RandomTalk : nonoverlap_pool
 
 anotherchain
 {{CHAIN
-	"\0\s[5]Hehe, here's a \_a[https://www.youtube.com/watch?v=Wo8yhLMemGk]link!\_a \e"
-	
 	"\0\s[0]... \w8\s[6]What? \w4Did you think I would do something?\0\w8\n\n[half]\s[5]Hehe, \w6nah, \w4I'm a good boy!\e:chain=end"
 }}CHAIN
 

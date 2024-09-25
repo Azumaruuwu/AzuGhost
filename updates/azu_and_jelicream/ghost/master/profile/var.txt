@@ -1,0 +1,10 @@
+Charset,UTF-8
+install,774545229
+homeurl_found,1
+surfacecount,64
+homeurl,https://raw.githubusercontent.com/Azumaruuwu/AzuGhost/main/updates/azu_and_jelicream/
+update_result,OK(1)
+firstboot,774545327
+update_time,780532783
+commitmemorysize,1637481
+lastboot,780613118

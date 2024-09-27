@@ -1,7 +1,7 @@
 charset,OSNative
 file,Template Readme - READ ME FIRST!.txt00736d87fdc4c792abd9112f4b9e5eb7size=6663date=2024-03-28T15:07:47
 file,azu_and_jelicream_icon.icob8d3dbaa5b0ce57eeb204ced64126dc5size=100793date=2024-07-17T11:56:25
-file,ghost/master/aitalk.dic24d768ea946f54a71f0d0609147cf809size=46563date=2024-09-25T16:58:30
+file,ghost/master/aitalk.dic702a5c04284d113afe5797d99a3d36cesize=46997date=2024-09-26T22:37:26
 file,ghost/master/anchor.dic201df4a2ecfa8a85feb258da396a33e4size=5180date=2023-09-28T21:34:06
 file,ghost/master/bootend.dicd157c90529b686d11bc211ffba8facf5size=38478date=2024-07-20T09:35:12
 file,ghost/master/commu.dic9f85638e33dcf678c75f9f7f9957bff5size=6739date=2024-07-18T10:10:27

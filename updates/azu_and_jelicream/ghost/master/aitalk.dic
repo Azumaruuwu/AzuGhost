@@ -140,7 +140,7 @@ RandomTalk : nonoverlap_pool
 	
 	//You can also change the side character's expression while the other character is talking. Note here that after the surprising statement, Triangle's pose is changed to s[12]. Then the focus is brought back to Girl with the \0 tag and she resumes talking. You can change focus without having the character actually say anything to accomplish just this effect.
 	
-	//"\0\s[2]This is my surprised pose.\w8\1\s[12]We are shocked!\e"
+	"\1\s[18]Have you had anything to eat today?\w8\0\s[2]Ooooh, \w2\s[5]yea! \w4Like candy!\w8\1\s[19]\nNot like candy.\w5\0\nI looooveeeee candy! \w4\s[0]Especially the really sweet ones,\w2\1\s[10]\0\ like jawbreakers.\w4\s[3]\w8\n\nThough... the last time i ate one, I got a really bad \_a[https://www.youtube.com/watch?v=jF3gbuxXoQk]toothache\_a. \w8\1\s[16]\n\nProbably because you tried to bite straight through it.\w6\0\s[9]\e"
 	
 	//"\0\s[3]This is my awkward pose.\w8\1\s[13]Check out this anime sweatdrop.\e"
 	
@@ -212,7 +212,7 @@ RandomTalk : nonoverlap_pool
 	//Note here that instead of ending the dialogue with the normal end tag of \e, it ends with \e:chain=achain. This will link down below to a chunk of code outside RandomTalk called achain. You can scroll down and find it now if you want. You can name your chain anything you want, it'd just follow the same format of \e:chain=yourchainsname. Once a dialogue has entered a chain, they won't say any other random dialogue until the chain is finished.
 	
 	//"\0\s[0]This will lead to the second piece of chained dialogue.\w8\1\s[10]This will have another chain attached to it.\e:chain=anotherchain"
-	"\0\s[5]Hehe, here's a \_a[https://www.youtube.com/watch?v=Wo8yhLMemGk]link!\_a \e:chain=anotherchain"
+	"\0\s[5]Hehe, here's a \_a[https://www.youtube.com/watch?v=Wo8yhLMemGk]link!\_a \e:chain=rickrollchain"
 	"\0\s[8]So, wait. \w4If we're on a computer.. \w8\s[5]does that mean we're technicallly on the internet too?\w8\1\s[15]What brought this up?\w8\0\n\n[half]\s[2]Oh! \w4\s[6]\_a[https://www.youtube.com/watch?v=k1BneeJTDcU]Nothing...\_a  \e:chain=internetchain"
 	//Here, this will link to a different chain to continue the conversation. You can scroll down to the section on chains to see this in action.
 	
@@ -356,7 +356,7 @@ RandomTalk : nonoverlap_pool
 	//Here's a list of similar tags you may find useful. You can see they function much like <b> or <i> tags in html. You just enclose the piece of text you want to change with them. Note that they start with \f[word,true] to turn it on, then \f[word,false] or \f[word,default] to turn it off. I assume you can tell what the tags do by the text they enclose.
 	//For the \f[color] tag, the three colors listed are the RGB values of the color you want to use for your text. Change them to whatever color you want to use. \f[default] can be an easy way to quickly go back to the default word setting in your balloon after messing with colors and effects a lot.
 	
-	"\0\s[5]Hehe, here's a \_a[https://www.youtube.com/watch?v=dQw4w9WgXcQ]link!\_a \w8\w8\w6\1\s[19]You really think you're gonna get them with that?\w4\0\n\n[half]\s[7]Shush!\e"
+	"\0\s[5]Hehe, here's a \_a[https://www.youtube.com/watch?v=dQw4w9WgXcQ]link!\_a \w8\w8\w6\1\s[19]You really think you're gonna get %(himher) with that?\w4\0\n\n[half]\s[7]Shush!\e"
 	
 	//Along the same lines as above, you can use \_a[address] to link to certain things. Note that it ends with \_a to close the link. It's very similar to <a href=address> and </a> in html.
 	
@@ -388,7 +388,7 @@ RandomTalk : nonoverlap_pool
 //Pay careful attention to the CHAIN text and double brackets for these. Double brackets, CHAIN, dialogue, double brackets, CHAIN. If you are planning on making chains, I'd recommend just copying and pasting the chain example here and changing the dialogue and name of the function as you need. Less likely for mistakes to happen, you know?
 //Note also it ends with \e:chain=end, basically ending the chain.
 
-anotherchain
+rickrollchain
 {{CHAIN
 	"\0\s[0]... \w8\s[6]What? \w4Did you think I would do something?\0\w8\n\n[half]\s[5]Hehe, \w6nah, \w4I'm a good boy!\e:chain=end"
 }}CHAIN
@@ -406,9 +406,10 @@ glowingchain
 {{CHAIN
 	"\1\s[13]That place always gave me the creeps anyway... \0\s[0]\1\w4\n\n\s[18]There was always something weird going on when I came to visit.\0\w8\s[2]Seriously? \n\n\w4\s[3]I didn't think there was anything wrong with it...\1\n\n\s[19]Well aren't you lucky? \n\n\s[16]\w8Pretty sure I saw \_a[https://www.youtube.com/watch?v=fIT1RSAcTDo]something glowing\_a in your room one of those days.\0\n\n[half]\s[2]\f[height,20]\f[bold,true]What!?\e"
 }}CHAIN
+
 kisschain
 {{CHAIN
-	"\0\s[6]\_a[https://www.youtube.com/watch?v=rsF5EWOQN9Y]Kiss me~\_a\w8\1\s[10]What?\w8\0\s[2]\n\nUhh-\w4\s[4] cus \w2like...\1\s[19]\w8\0\s[4] you said- \w8\w4\n\nuuhhhh... \w8\w4\s[9]nevermind.\e"
+	"\0\s[6]\_a[https://www.youtube.com/watch?v=rsF5EWOQN9Y]Kiss me~\_a\w8\1\s[10]What?\w4\0\s[2]\n\n\f[height,20]\f[bold,true]Uhh-!\f[height,default]\f[bold,false]\w8\s[4] cus \w2like...\1\s[19]\w8\0\s[4] you said- \w8\w4\n\nuuhhhh... \w8\w4\s[9]nevermind.\e"
 }}CHAIN
 //You can make chains as long or as shot as you want! Just make sure to end the chain when you're done.
 

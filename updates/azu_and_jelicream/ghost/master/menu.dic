@@ -387,7 +387,7 @@ birthchecked
 {
 	if userbirthday == dayslot //if today is the user's birthday
 		{
-			"\0\s[5]Happy Birthday, %(username)!\w8\1\s[15]Congrats on getting one year closer to death!\w8\0\n\s[9]Jelicream!\w8\1\n\s[16]What? \w4I'm just sayin'.\e"
+			"\0\s[5]Happy Birthday, %(username)!\w8\1\s[15]Congrats on getting one year closer to death!\w5\0\n\n\s[9]Jelicream!\w8\1\n\s[16]What? \w4I'm just sayin'.\e"
 			//replace this dialogue with whatever you like
 		}
 	elseif userbirthday == "12month 25day"
@@ -616,7 +616,8 @@ Select.MailCheck
 
 OnChoiceTimeout
  {
-	"\0\s[0]The menu has timed out.\e"
+	"\0\s[9]...\e"
+	"\1\s[19]...\e"
  }
 
  
@@ -635,7 +636,6 @@ KeroMenuIntros : nonoverlap
  	--
 	
 	"\s[12]Oh- \w4\s[10]Hi."
- 	"\s[18]I don't have much i can do, y'know?"
  	"\s[18]Hi there, \w4I guess."
  	"\s[13]Uh- \w4Hey."
 }
@@ -650,6 +650,7 @@ OpenKeroMenu : all
 	
 	//these are the menu options
 	"\n\n[half]"
+	"\![*]\q[Ask a Question,JeliQuestions]\n\n"
 	"\![*]\q[Update,keroupdatecheck]\n"
  	"\![*]\q[Bug report,bugreport]\n\n"
 	
@@ -668,6 +669,43 @@ Select.keroCANCEL
 	"\1\s[19]Bye then.\e"
 }
 
+JeliQuestionMenu
+{
+	"\1\b[2]"
+	
+	--
+	
+	"\1\s[18]Yea,\w2 what is it?"
+	
+	"\1\s[12]Oh? \w4\s[10]Okay, \w2shoot."
+}
+Select.JeliQuestions : all
+{	
+	JeliQuestionMenu
+	
+	--
+	
+	"\n\n[half]"
+	"Ask about...\n\n"
+	"\![*]\q[Azumaru's Weird Hat,JeliHatAsk]\n"
+	"\![*]\q[Opinion on Azumaru,JelisAzuFeels]\n"
+}
+Select.JeliHatAsk
+{
+	
+	"\1\s[18]Oh, \w2that thing? \w8\s[13]\nI've got no idea, to be honest.\n\n\w8\w8\s[14]Gives me the creeps, \w1really...\e"
+	
+	"\1\s[19]I've got no idea whats up with that thing. \w8\s[14]\n\nIt kinda creeps me out,\w1 to be honest with you...\e"
+	
+	"\1\s[13]Oh,\w1 uhhhh...\0\s[0]...\w8\w8\1\s[14]\n\nIt's fine,\w2 I guess...\e"
+}
+
+Select.JelisAzuFeels
+{
+	"\1\s[18]I dont think any badly of him,\w4 if that's what you mean.\w5\s[10]\w8\w4\s[19]\w8\w2\n\nHe is a bit... \s[13]much though, \w2sometimes.\e"
+	
+	"\1\s[19]A real pain sometimes...\w8\s[18]\n\n But he's got spirit, I guess.\e"
+}
 
 //This is when they select bug report. This is mostly meant to briefly give the user information about you, the creator, and how to report a problem to you. This can be handy if the person forgot where they got their ghost or how to contact you. Add whatever info you like here.
 Select.bugreport

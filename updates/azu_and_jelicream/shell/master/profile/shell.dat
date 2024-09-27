@@ -3,7 +3,7 @@ __system_settings_version__,2
 balloon,C:\Users\briem\Downloads\balloon\jelly_and_shrooms\
 Char1.balloon.isleft,1
 inputbox.left,664
-balloon0.offset,188.-269
+balloon0.offset,190.-284
 scriptbox.left,786
 Char0.centery,768
 Char2.centery,687
@@ -17,7 +17,7 @@ Char0.center,1264
 scriptbox.top,265
 Char1.centery,768
 Char3.centery,685
-Char1.center,1065
+Char1.center,1051
 seriko.scaling.percent.x,100
 seriko.scaling.balloon.percent.x,100
 seriko.scaling.percent.y,100

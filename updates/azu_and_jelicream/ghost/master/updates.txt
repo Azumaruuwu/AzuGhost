@@ -10,7 +10,7 @@ file,ghost/master/etc.dic597234a1279a7ee37bb6305d91311051size=37665date=2024-
 file,ghost/master/gomi.dll51fe9597398db01e684a0f9d52c63242size=13312date=2004-06-01T21:00:04
 file,ghost/master/gt_template.ico9b275939dbf11bd2ec5f4ef3e00fa06asize=1148date=2014-11-09T18:17:39
 file,ghost/master/mciaudior.dllb1082bccd2aac2017f7936baf2d967b3size=29696date=2003-03-13T17:23:26
-file,ghost/master/menu.dic606c6acd6a99d5bea8c3bc01d928fda1size=38684date=2024-09-27T17:21:58
+file,ghost/master/menu.dic27c13a02897a4550afb09b489b28a4cfsize=40100date=2024-09-27T18:40:33
 file,ghost/master/mouse.dicf581a65fb12c492a229147cc51dc0d9fsize=11776date=2024-07-18T11:08:55
 file,ghost/master/nameteach.dic4d3deb3d1e4d6876dd0410e407e67df0size=10104date=2024-07-18T02:40:48
 file,ghost/master/saori_cpuid.dlld13370aee8e579fe2517d789dba7c45esize=225280date=2004-04-17T20:47:18

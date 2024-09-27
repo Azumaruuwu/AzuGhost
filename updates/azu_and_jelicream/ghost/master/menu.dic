@@ -58,11 +58,58 @@ MenuRun : all
 	//This option will force the ghost to say something from aitalk if the user clicks it. Just replace "Say something" with whatever caption you think would be appropriate.
 	//Advanced users, you can add multiple captions for any option you add to a menu you make just like this, as long as you separate it from the other options into its own section with two dashes above and below. Note that you can't do this if the Function above has ": all" after it, since that will put every potential option in. You'll have to set it your menu up differently to take --s into account. I commented it out here because of ": all" above, but you can see the basic idea.
 	--
+	"\![*]\q[Ask a Question,AzuQuestions]\n\n"
 	"\![*]\q[Config Menu,configmenu]\n"
 	"\![*]\q[Functions,dosomething]\n\n[half]"
  	"\![*]\q[Nevermind,CANCEL]\n\n\n[half]%(wd) %(nowhour):%(nowmin) %(ap), %(month)/%(day)/%(year)\e"
 	
 	//These three lead to the Config Menu, the Function menu, and Cancel. You can leave these alone if you like. All the envelopes at the end (see word.dic) basically display the year, month, day, weekday, and time.
+}
+
+AzuQuestionMenu
+{
+	"\0\b[2]"
+	
+	--
+	
+	"\0\s[5]Yea,\w2 what is it?"
+	
+	"\0\s[5]Yea! \w4Ask whatever!"
+}
+Select.AzuQuestions : all
+{	
+	AzuQuestionMenu
+	
+	--
+	
+	"\n\n[half]"
+	"Ask about...\n\n"
+	"\![*]\q[Opinion on Jelicream,AzusJeliFeels]\n"
+	"\![*]\q[What's Jelicream made of,JeliAnatomy]\n"
+	"\![*]\q[The Weird Hat,AzuHatAsk]\n"
+}
+
+Select.AzusJeliFeels
+{
+	"\0\s[3]Jelicream? \w4\s[5]I think he's really cool!\n\n\s[6]I've known him since forever,\w2 and he's always been a down to earth kinda guy.\e"
+	
+	"\0\s[0]Oh,\w2 \s[5]I've known Jelicream since i was a weeeeeee' baby! \w8\s[2]\n\nDon't tell him I told you this,\1\s[19]\0\ \w4\s[5]but he's reaaaaallllyyyyyyyyy shy around other people!\e"
+}
+
+Select.JeliAnatomy
+{
+	"\0\s[8]Weird question,\w4 \s[5]but luckily for you I know exactly what he's made of! \w8\s[6]\nSugar, \w2Spice, \w2and Everything Nice of course!\e"
+	
+	"\1\s[19]\0\s[8]Oh, well-\s[2]\1\s[17]Don't answer that Azzy!\w8\0\s[7]\nWhaaattt??\1\s[19]\0\w8\s[9] I wasn't actually gonna answer it...\w8\1\nUh-huh?\e"
+	
+	"\0\s[8]Well-\0\s[2]\1\s[19]\f[height,15]\f[bold,true]No\f[height,default]\f[bold,false].\1\w8\n We're not having this \0\s[9]\1conversation.\e"
+}
+
+Select.AzuHatAsk
+{
+	"\0\s[0]What hat.\w4\1\s[14]\e"
+	
+	"\0\s[0]...\w8\w4\1\s[13]\w9\w9\w8\1\s[14]... This is why I dont ask him myself...\e"
 }
 
 //Leave this alone

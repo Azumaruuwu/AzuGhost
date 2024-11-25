@@ -602,7 +602,7 @@ OnShellChanged
 		
  		"\1\s[12]\0\s[3]Huh...\w8\1\s[10]\0\n\n\s[8]I feel...\w8\w4 different somehow?\w4\1\s[19]\w8...\w8\s[18] Wow,\w8 I wonder why?\w8\w8\0\s[2]\n\nOh my God, Jelicream!\w4\1\s[10]\w8\w6\0\s[1] You're a cat!\w8\1\s[19]\n\nYea, I noticed.\e"
 		
- 		//"\0\s[0]\1\s[13]Oh...\w9\w8\n\n\s[16]Well,\w2 this is a change of pace.\e"
+ 		"\0\s[8]\1\s[15]Oh...\w9\w8\n\n\s[18]Well,\w2 this is a change of pace.\w8\w9\0\s[2]Whuh!?-\n\w2\s[7]Why's \1\s[10]\0your tail longer than mine?!\w8\1\s[16]\n\nCus I'm better then you, obviously.\w8\0\s[9]\n\n...\w8Whatever.\e"
  	}
  	elseif reference0 == "Another totally real shell wow"
  	{

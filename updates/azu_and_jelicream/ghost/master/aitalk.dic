@@ -229,11 +229,11 @@ RandomTalk : nonoverlap_pool
 	}
 	
 	//You can also put in multiple ifs checking for the same thing to vary the responses. In this case, it's checking to see if they're wearing another shell. You don't need to use elseifs for this! Just an if is fine.
-	if nowshell == "Hypothetical Shell that doesn't actually exist"
+	if nowshell == "slugcat"
 	{
-	"\0\s[0]This is dialogue related to a shell we don't actually have.\w8\1\s[18]Unless it somehow pops into existence.\e"
+	""
 	
-	"\0\s[0]This is more dialogue related to a hypothetical shell we don't actually have.\w8\1\s[19]It's not happening.\e"
+	""
 	}
 	//After the if statement is done, you can continue with dialogue as normal. As you can see, you can move the ifs around in here, it doesn't really matter. You may want to stick them all in one place together if you want to keep track of them, or you can scatter them around your dialogue as you please. It's up to you. These two lines below are just normal random dialogue.
 	

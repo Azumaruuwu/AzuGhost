@@ -18,7 +18,7 @@ seriko.use_self_alpha,1
 
 charset,UTF-8
 type,shell
-name,Default Shell
+name,Normal
 craftman,azumaru
 craftmanurl,http://www.ashido.com/ukagaka/walkthrough.html
 

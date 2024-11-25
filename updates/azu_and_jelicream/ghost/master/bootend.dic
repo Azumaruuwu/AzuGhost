@@ -576,9 +576,7 @@ OnShellChanging
 	}
 	else //if you don't have any specific dialogue for a specific shell
 	{
-	"\0\s[0]This dialogue is for changing shells.\w8\1\s[10]Sure is.\w8\e"
-	
-	"\1\s[10]This is another bit of dialogue for changing shells.\w8\0\s[8]I wonder how many people will actually have multiple shells?\e"
+	"\e"
 	
 	//Rewrite these two lines as you need.
 	}
@@ -591,21 +589,20 @@ OnShellChanging
  
 OnShellChanged
  {
- 	if reference0 == "GT Default Shell" //Again, this is the name of your shell as you put in the descript.txt file for that shell.
+ 	if reference0 == "Normal" //Again, this is the name of your shell as you put in the descript.txt file for that shell.
  	{
  		nowshell = "master" //This is the folder name for your shell. Not the same as the above! 
 		
- 		"\0\s[0]This dialogue is for switching to our default shell.\w8\1\s[18]No really, will anyone actually put in the work to use these functions?\w8\0\s[9]\n\n[half]Shh.\e"
+ 		"\e"
 		//Replace dialogue as required.
  	}
- 	elseif reference0 == "Hypothetical Shell that doesn't actually exist" //You can use as many elseifs for as many shells as you've got.
+ 	elseif reference0 == "Slugcat" //You can use as many elseifs for as many shells as you've got.
  	{
- 		nowshell = "totallyrealshell"
+ 		nowshell = "slugcat"
 		
- 		"\0\s[0]This dialogue is for switching to that hypothetical shell.\e"
+ 		"\1\s[12]\0\s[3]Huh...\w8\1\s[10]\0\n\n\s[8]I feel...\w8\w4 different somehow?\w4\1\s[19]\w8...\w8\s[18] Wow,\w8 I wonder why?\w8\w8\0\s[2]\n\nOh my God, Jelicream!\w4\1\s[10]\w8\w6\0\s[1] You're a cat!\w8\1\s[19]\n\nYea, I noticed.\e"
 		
- 		"\0\s[0]This is another bit of dialogue for switching to this hypothetical shell.\w8\1\s[18]Man if you actually use this, you should tell Zar, it'll blow her mind.\w8\0\n\n[half]\s[9]Shut up, we're not supposed to be in-character here.\e"
-		//Replace these bits with whatever you have in mind.
+ 		//"\0\s[0]\1\s[13]Oh...\w9\w8\n\n\s[16]Well,\w2 this is a change of pace.\e"
  	}
  	elseif reference0 == "Another totally real shell wow"
  	{

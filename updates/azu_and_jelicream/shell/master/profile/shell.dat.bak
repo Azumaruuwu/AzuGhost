@@ -3,11 +3,11 @@ __system_settings_version__,2
 balloon,C:\Users\briem\Downloads\balloon\jelly_and_shrooms\
 Char1.balloon.isleft,1
 inputbox.left,664
-balloon0.offset,190.-284
+balloon0.offset,201.-274
 scriptbox.left,786
 Char0.centery,768
 Char2.centery,687
-balloon1.offset,159.-536
+balloon1.offset,16.-266
 Char0.balloon.isleft,1
 Char3.center,555
 Char3.balloon.isleft,1

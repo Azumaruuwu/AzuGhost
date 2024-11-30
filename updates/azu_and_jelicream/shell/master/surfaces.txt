@@ -113,11 +113,7 @@ element0,overlay,surface0.png,0,0
 //--Blinking---------------------------------------------------------------------------
 //Here's the animation block to set up a random blink.
 
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1002,5,overlayfast,0,0
-0pattern2,1001,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
+
 
 //For those just replacing my images, you won't have to mess with any of this. Just be sure that your blink frames look like my blink frames. For those who are going to reuse this block or do their own thing, all you need to do is replace 1001 and 1002 with the file numbers of your new blink frames. Everything else can stay exactly the same.
 //If you want to know more about the exact mechanics of how these lines of animation work, I'd recommend reading the page on the walkthrough site about SERIKO coding, which breaks it down piece by piece. I'll touch on it a little here though.
@@ -129,24 +125,11 @@ element0,overlay,surface0.png,0,0
 //--Talking-----------------------------------------------------------------------------
 //This block deals with your ghost's mouth moving as it speaks to you. 
 
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
+
 
 //You can see some unique things about this block. The interval is set to talk,4, which means it'll run for every four characters or so that appear in the balloon. You can change 4 to a different number but there's no reason to, I wouldn't do it myself.
 //Below that line, you can see alternativestart, then some numbers in some brackets. What this does is that it will randomly select an interval with that number as it runs. Look below, do you see the intervals numbered 2, 3, and 4? Those are the intervals this animation will call. You can add numbers to those brackets or take them away if you want, so you could do things like [2.3.4.5] or [2.3] or whatever.
 
-2interval,never
-2pattern0,1102,10,overlay,0,0
-2pattern1,1101,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1101,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1102,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 
 //These three intervals handle the talk frames. For those who are doing their own thing or adding talk frames to their other Surfaces, all you need to do is copy and paste the talk blocks (1interval to 4interval) into the Surface you want and replace 1101 and 1102 with the appropriate file numbers for your new talk frames. You can also add more frames to your talking animation if you want. Those just replacing my images don't have to worry about any of this, as long as your mouth frames look like mine.
 //IMPORTANT NOTE: IF YOU'RE DOING A PROFILE VIEW AND YOUR MOUTH IS MOVING OUTSIDE THE BODY then you're going to need to use Replace instead. I'm sorry for your loss. I'll get into Replace later. Your other option is to change your pose or move your mouth or do something to make sure your mouth's movement does not break your character's silhouette. If any furries are reading this, you will probably run into this problem a lot with any kind of side-view of a muzzle.
@@ -178,27 +161,6 @@ collision1,42,101,131,159,Face
 
 element0,overlay,surface1501.png,0,0
 
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1004,5,overlayfast,0,0
-0pattern2,1003,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
-
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1104,10,overlay,0,0
-2pattern1,1103,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1103,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1104,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 }
 
 //Main Character Surprised pose
@@ -209,27 +171,6 @@ collision1,42,101,131,159,Face
 
 element0,overlay,surface1502.png,0,0
 
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1006,5,overlayfast,0,0
-0pattern2,1005,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
-
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1106,10,overlay,0,0
-2pattern1,1105,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1105,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1106,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 }
 
 //Main Character Worried pose
@@ -240,27 +181,6 @@ collision1,42,101,131,159,Face
 
 element0,overlay,surface1503.png,0,0
 
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1008,5,overlayfast,0,0
-0pattern2,1007,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
-
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1108,10,overlay,0,0
-2pattern1,1107,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1107,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1108,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 }
 
 //Main Character Sad/Disappointed pose
@@ -271,27 +191,6 @@ collision1,42,114,132,166,Face
 
 element0,overlay,surface1504.png,0,0
 
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1010,5,overlayfast,0,0
-0pattern2,1009,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
-
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1110,10,overlay,0,0
-2pattern1,1109,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1109,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1110,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 }
 
 //Main Character Smiling pose
@@ -302,27 +201,6 @@ collision1,42,101,131,159,Face
 
 element0,overlay,surface1505.png,0,0
 
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1012,5,overlayfast,0,0
-0pattern2,1011,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
-
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1112,10,overlay,0,0
-2pattern1,1111,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1112,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1111,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 }
 
 //Main Character Contented pose
@@ -332,22 +210,6 @@ collision0,46,78,110,103,Head
 collision1,42,101,131,159,Face
 
 element0,overlay,surface1506.png,0,0
-
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1114,10,overlay,0,0
-2pattern1,1113,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1114,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1113,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 }
 
 //Main Character Angry pose
@@ -357,27 +219,6 @@ collision0,46,78,110,103,Head
 collision1,42,101,131,159,Face
 element1,overlay,surface1507.png,0,0
 
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1116,10,overlay,0,0
-2pattern1,1115,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1116,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1115,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
-
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1016,5,overlayfast,0,0
-0pattern2,1015,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
 }
 
 //Main Character Thoughtful Pose
@@ -388,27 +229,6 @@ element1,overlay,surface1508.png,0,0
 collision0,67,67,124,94,Head
 collision1,47,91,131,165,Face
 
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,1118,10,overlay,0,0
-2pattern1,1117,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,1118,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,1117,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
-
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1018,5,overlayfast,0,0
-0pattern2,1017,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
 }
 
 //Main Character Bored pose
@@ -419,11 +239,6 @@ collision1,42,114,132,166,Face
 
 element1,overlay,surface1509.png,0,0
 
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,1020,5,overlayfast,0,0
-0pattern2,1019,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
 }
 
 surface20
@@ -459,31 +274,12 @@ element0,overlay,surface10.png,0,0
 //Here is Triangle's base frame.
 
 //Blinking
-0interval,random,4
-0pattern0,-1,10,overlay,0,0
-0pattern1,2002,5,overlayfast,0,0
-0pattern2,2001,10,overlayfast,0,0
-0pattern3,-1,3,overlay,0,0
+
 
 //Then all I did was change the file numbers to the right numbers for Triangle's blink. Done!
 //If your second character has a mouth though and wants to use the talking frames, you'd want to borrow the code from surface0 for it. I'll put it here just to make it a bit easier to find, but I'll comment it out. If you're going to use it, erase the slashes // to uncomment it and put in the right file numbers for your mouth frames instead of 1102 and 1101. Done!
 
 
-1interval,talk,4
-1pattern0,0,0,alternativestart,[2.3.4]
-
-2interval,never
-2pattern0,2102,10,overlay,0,0
-2pattern1,2101,13,overlay,0,0
-2pattern2,-1,10,overlay,0,0
-
-3interval,never
-3pattern0,2101,14,overlay,0,0
-3pattern1,-1,10,overlay,0,0
-
-4interval,never
-4pattern0,2102,14,overlay,0,0
-4pattern1,-1,10,overlay,0,0
 }
 
 //And that's it for Triangle's default pose! Like with the main character poses above, all we have to do for the following surfaces is make sure they're pointing at the right file number!

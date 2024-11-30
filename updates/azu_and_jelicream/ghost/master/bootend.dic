@@ -604,11 +604,12 @@ OnShellChanged
 		
  		"\0\s[8]\1\s[15]Oh...\w9\w8\n\n\s[18]Well,\w2 this is a change of pace.\w8\w9\0\s[2]Whuh!?-\n\w2\s[7]Why's \1\s[10]\0your tail longer than mine?!\w8\1\s[16]\n\nCus I'm better then you, obviously.\w8\0\s[9]\n\n...\w8Whatever.\e"
  	}
- 	elseif reference0 == "Another totally real shell wow"
+ 	elseif reference0 == "Old"
  	{
- 		nowshell = "thiswouldbesomuchwork"
+ 		nowshell = "old"
 		
- 		"\1\s[10]This dialogue is after we've switched to another totally real shell.\e"
+ 		"\1\s[10]\0\s[2]Woah!\w8\n\n\s[8]I feel...\w9\w4 \s[6]retrooooooooooooo~!\w8\1\s[19]We are not that old.\e"
+		
 		//Replace this as well.
  	}
  	else //For any shell without a specific name, or if you don't want to bother with individual responses to a shell.

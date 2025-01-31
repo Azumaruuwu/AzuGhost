@@ -144,17 +144,17 @@ RandomTalk : nonoverlap_pool
 	
 	"\0\s[2]Oh\w1 my\w1 God\w1, Jelicream!\w2\1\s[10]\0 I have a good one!!! \w8\s[8]\n\nWhy shouldn't you invest in time travel?\w8\w8\1... \w4Why?\0\w4\s[5] Cus' it's a waste of \w4\f[bold,true]time!\f[bold,false]\w8\1\s[19]\n\n I think that was the worst one yet.\w2\0\s[1]\n\nW-\w2What?! \w4\s[7]No, it's really clever!!\w4\1\s[18]\n\nWhatever you say.\e"
 	
-	"\0\s[1]\f[bold,true]O\w4M\w4G\w4 JELICREAM.\f[bold,false]\w4 I just had the craziest dream last night!\w8\1\s[18]Uh huh?\w8\1\s[10]\0\s[5]\n\nYeah, I was in a whole ocean of orange soda!\w8\w8\s[4]\nBut, \w8it turns out...\w8\w8\n\nIt was just... \s[22]a Fanta\w8-sea!\w8\1\s[19]\n\n...\w8Really now?\e"
+	"\0\s[1]\f[bold,true]O\w4M\w4G\w4 JELICREAM.\f[bold,false]\w4 I just had the craziest dream last night!\w8\1\s[18]Uh huh?\w8\1\s[10]\0\s[5]\n\nYeah, I was in a whole ocean of orange soda!\w8\w8\s[4]\nBut, \w8it turns out...\w8\w8\n\nIt was just... \s[22]a Fanta\w8-\f[bold,true]sea!\f[bold,false]\w8\1\s[19]\n\n...\w8Really now?\e"
 	
-	//"\0\s[5]This is my happy pose.\w8\1\s[15]How wonderful!\e"
+	"\0\s[2]Jelicream!!!\1\s[10]\0\w5\s[6]\n\nWhat do you call an alligator in a vest?\w9\w9\1\... an investig-?\s[19]\0\s[22]\n\n\f[bold,true]AN INVESTIGATOR!!!!!\f[bold,false]\e"
 	
-	//"\0\s[6]This is my contented pose.\w8\1\s[16]Life is good.\e"
+	"\0\s[2]Oh my god,\w4 Jelicream!!\w8\1\s[10]What?\w8\0\s[3]\nDid you hear about the actuary who wouldn't make whipped cream?\w8\1\s[51]\w4\n\nUuuhhhh...\w8 no?\w8\0\s[2]\n\nYeah!!\w4\1\s[10]\0\w4\nThey say she was...\w8\s[22] \f[bold,true]whisk\f[bold,false]\w8-averse!\w8\1\s[19]\w8\w7\n\n... Of course.\e"
 	
 	//"\0\s[7]This is my angry pose.\w8\1\s[17]No YOU shut up!\e"
 	
 	//"\0\s[8]This is my thoughtful pose.\w8\1\s[18]Where did we put that thing?\e"
 	
-	//"\0\s[9]This is my bored pose.\w8\1\s[19]Oh, what a surprise.\e"
+	"\0\s[3]\w9\w8...\w8\nJelic\1\s[10]\0ream?\w8\s[0]\nWhat if a cartoon said fart?\w4\1\s[19]No.\w4\0\s[2]\nNo, no, no hear me out!\w4\1\s[10]\0\s[5]\n\nWhat if a cartoon-\1\nNo-\0\nkinda stumbled over his words but we kept it in-\1\nNo y-\1\s[19]\0\s[9]\n\nLet me finish Jeli!\w8\n\s[0]What if...\w4 a cartoon said big farts.\w8\1\s[18]\n\nNo,\w3 you're just repeating yourself.\w8\0\s[6]\n\nOkay, okay.\w8\nWhat if...\1\s[19]\w8\w5\n\nUh huh?\w8\w5\0 a cartoon...\w8\w9\1\n...Yeah?\w8\0 said big farts.\w8\1\s[18]\n\nIt's just repetition,\w4 you're using the rythyms of comedy with no punchline.\w8\0\s[9]\n\nWhat do you know?\n\w4 You've never made a joke in your life.\w8\1\s[19]\n\nWhat about when I'm a victim of meaningless violence?\e"
 	
 	//Here's dialogue with all of their poses so you can see them in action. Note how the \s number changes for each of them. They don't have to match of course, you can have one character happy and one character sad and do whatever you like. These are just examples you can rewrite as you like with your own dialogue.
 	

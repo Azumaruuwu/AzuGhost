@@ -73,7 +73,7 @@ OnFirstBoot : all
 		//Always make sure to keep your dialogue in the quotation marks! And remember, you can't use quotation marks IN dialogue either. You can use two single apostrophes instead if you must.
 		//Note also the use of the \x and \c tags. Read more about them in the intermediate SakuraScript section of the walkthrough if you're curious.
 		
-	"\1\s[10]\0\s[2]Oh, Hi! \w5\s[5]I'm Azumaru, \w4and that's Jelicream over there.\w8\1\s[19]Uh- Hey. \w8\0\s[0]\n\n[half]This ghost isn't finshed yet.\w4\1\n\n\s[18]We only have a few pieces of dialogue so far. \w8\0\n\n[half]\s[8] If you see any \1\s[10]\0\s[8]typos or things that you don't think should be there, \w4\s[5]make sure to tell the creator!\w8\1\n\n[half]\s[10]To access our personal menu,\0\s[0]\w4\1\s[10] double click either of us, \w4\nand to access SSP's menu, \w2just right click on Azumaru.\w8\w8\0\n\n[half]\s[8]First though, \w2we'll need to know how to refer to you, \s[0]\nnamely, \w2what pronouns you want us to use.\x\w8\1\c\s[18]How should we refer to you, user?\n\n[half]\e"
+	"\1\s[10]\0\s[2]Oh, Hi! \w5\s[5]I'm Azumaru, \w4and that's Jelicream over there.\w8\1\s[19]Uh- Hey. \w8\0\s[0]\n\n[half]This ghost isn't finshed yet.\w4\1\n\n\s[18]We only have a few pieces of dialogue so far. \w8\0\n\n[half]\s[8] If you see any \1\s[10]\0\s[8]typos or things that you don't think should be there, \w4\s[5]make sure to tell the creator!\w8\1\n\n[half]\s[10]To access our personal menu,\0\s[0]\w4\1\s[10] double click either of us, \w4\nand to access SSP's menu, \w2just right click on Azumaru.\w8\w8\0\n\n[half]\s[8]First though, \w2we'll need to know how to refer to you, \s[0]\nnamely, \w2what pronouns you want us to use.\x\w8\1\c\s[18]How should we refer to you, user?\n\n[half]"
 		"\w5\_q\![*]\q[He/Him/His,choicefirsthehim]\n"
 		"\![*]\q[She/Her/Hers,choicefirstsheher]\n"
 		"\![*]\q[They/Them/Their,choicefirsttheythem]\e"
@@ -401,6 +401,8 @@ OnClose
 	 
 	 "\1\s[10]Bye.\w8\w8\-"
 	 
+	 "\1\s[19]\f[italic,true]Finally.\f[italic,true]\w8\0\s[9]Oh, come on, Jel-\-"
+	 
 	 //Add as many or as few close messages in here as you want! Make sure to end them with \w8\w8\- though.
  }
  
@@ -600,9 +602,11 @@ OnShellChanged
  	{
  		nowshell = "slugcat"
 		
- 		"\1\s[12]\0\s[3]Huh...\w8\1\s[10]\0\n\n\s[8]I feel...\w8\w4 different somehow?\w4\1\s[19]\w8...\w8\s[18] Wow,\w8 I wonder why?\w8\w8\0\s[2]\n\nOh my God, Jelicream!\w4\1\s[10]\w8\w6\0\s[1] You're a cat!\w8\1\s[19]\n\nYea, I noticed.\e"
+ 		"\1\s[12]\0\s[3]Huh...\w8\1\s[10]\0\n\n\s[8]I feel...\w8\w4 different somehow?\w4\1\s[19]\w8...\w4\s[18] Wow,\w8 I wonder why?\w8\w8\0\s[2]\n\nOh my God, Jelicream!\w4\1\s[10]\w8\w6\0\s[1] You're a cat!\w8\1\s[19]\n\nYea, I noticed.\e"
 		
  		"\0\s[8]\1\s[15]Oh...\w9\w8\n\n\s[18]Well,\w2 this is a change of pace.\w8\w9\0\s[2]Whuh!?-\n\w2\s[7]Why's \1\s[10]\0your tail longer than mine?!\w8\1\s[16]\n\nCus I'm better then you, obviously.\w8\0\s[9]\n\n...\w8Whatever.\e"
+		
+		"\1\s[10]\0\s[0]Oh my god...\w9\s[2]\nAFTER ALL THIS TIME...!!!\w9\s[1]\n\nI HAVE FINGERS!!!!!!\w4\1\s[15]wohoo\w8\w8\0\s[6]\n\nI can finally hold a pencil...\e"
  	}
  	elseif reference0 == "Old"
  	{

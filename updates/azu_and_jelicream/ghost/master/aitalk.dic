@@ -114,7 +114,7 @@ RandomTalk : nonoverlap_pool
 	
 	//Single lines of dialogue like this are simple and easy to do.
 	
-	"\0\s[6]I used to have a pet fish!\w8\1\s[18]Used to? \w8What happened to them?\w2\s[10]\w6\0\n\s[3]... \w8I ate them...\w8\1\n\s[13]... \w8Of course you did.\e"
+	"\0\s[6]I used to have a pet fish!\w8\1\s[18]Used to? \w8What happened to it?\w2\s[10]\w6\0\n\n\s[3]... \n\w8They looked too tasty...\w8\s[4] I had no choice...\w8\1\n\n\s[19]... \w8What else is new.\e"
 	
 	"\0\s[8]Staying inside is good for anxiety, \w4but not depression. \w4\nand going out is good for depression, \w4but not anxiety...\w8\w6\n\n[half]\s[5] Stand directly in the doorway for peek mental health!\w8\1\s[19] Thats not how it works.\e:chain=mentalhealthchain"
 	
@@ -140,17 +140,17 @@ RandomTalk : nonoverlap_pool
 	
 	//You can also change the side character's expression while the other character is talking. Note here that after the surprising statement, Triangle's pose is changed to s[12]. Then the focus is brought back to Girl with the \0 tag and she resumes talking. You can change focus without having the character actually say anything to accomplish just this effect.
 	
-	"\1\s[18]Have you had anything to eat today?\w8\0\s[2]Ooooh, \w2\s[5]yea! \w4Like candy!\w8\1\s[19]\nNot like candy.\w5\0\nI looooveeeee candy! \w4\s[0]Especially the really sweet ones,\w2\1\s[10]\0\ like jawbreakers.\w4\s[3]\w8\n\nThough... the last time i ate one, I got a really bad \_a[https://www.youtube.com/watch?v=jF3gbuxXoQk]toothache\_a. \w8\1\s[16]\n\nProbably because you tried to bite straight through it.\w6\0\s[9]\e"
+	"\1\s[18]Have you had anything to eat today, %(username)?\w8\0\s[2]Ooooh, \w2\s[5]yea! \w4Like candy!\w8\1\s[19]\nNot like candy.\w5\0\nI looooveeeee candy! \w4\s[0]Especially the really sweet ones,\w2\1\s[10]\0\ like jawbreakers.\w4\s[3]\w8\n\nThough... the last time i ate one, I got a really bad \_a[https://www.youtube.com/watch?v=jF3gbuxXoQk]toothache\_a. \w8\1\s[16]\n\nProbably because you tried to bite straight through it.\w6\0\s[9]\e"
 	
-	"\0\s[2]Oh\w1 my\w1 God\w1, Jelicream!\w2\1\s[10]\0 I have a good one!!! \w8\s[8]\n\nWhy shouldn't you invest in time travel?\w8\w8\1... \w4Why?\0\w4\s[5] Cus' it's a waste of \w4\f[bold,true]time!\f[bold,false]\w8\1\s[19]\n\n I think that was the worst one yet.\w2\0\s[1]\n\nW-\w2What?! \w4\s[7]No, it's really clever!!\w4\1\s[18]\n\nWhatever you say.\e"
+	"\0\s[2]Oh\w1 my\w1 God\w1, Jelicream!\w2\1\s[10]\0 I have a good one!!! \w8\s[8]\n\nWhy shouldn't you invest in time travel?\w8\w8\1... \w4Why?\0\w4\s[5] Cus' there's no \w4\f[bold,true]future\f[bold,false]\w4 in it!\w8\1\s[19]\n\n I think that was the worst one yet.\w2\0\s[1]\n\nW-\w2What?! \w4\s[7]No, it's really clever!!\w4\1\s[18]\n\nWhatever you say.\e"
 	
-	"\0\s[1]\f[bold,true]O\w4M\w4G\w4 JELICREAM.\f[bold,false]\w4 I just had the craziest dream last night!\w8\1\s[18]Uh huh?\w8\1\s[10]\0\s[5]\n\nYeah, I was in a whole ocean of orange soda!\w8\w8\s[4]\nBut, \w8it turns out...\w8\w8\n\nIt was just... \s[22]a Fanta\w8-\f[bold,true]sea!\f[bold,false]\w8\1\s[19]\n\n...\w8Really now?\e"
+	"\0\s[1]\f[bold,true]O\w4M\w4G\w4 JELICREAM.\f[bold,false]\w4 I just had the craziest dream last night!\w8\1\s[18]Uh huh?\w8\1\s[10]\0\s[5]\n\nYeah, I was in a whole ocean of orange soda!\w8\w8\s[4]\nBut, \w8it turns out...\w8\w8\n\nIt was just... \s[22]a \f[bold,true]Fanta\w8-\f[bold,true]sea!\f[bold,false]\w8\1\s[19]\n\n...\w8Really now?\e"
 	
 	"\0\s[2]Jelicream!!!\1\s[10]\0\w5\s[6]\n\nWhat do you call an alligator in a vest?\w9\w9\1\... an investig-?\s[19]\0\s[22]\n\n\f[bold,true]AN INVESTIGATOR!!!!!\f[bold,false]\e"
 	
 	"\0\s[2]Oh my god,\w4 Jelicream!!\w8\1\s[10]What?\w8\0\s[3]\nDid you hear about the actuary who wouldn't make whipped cream?\w8\1\s[51]\w4\n\nUuuhhhh...\w8 no?\w8\0\s[2]\n\nYeah!!\w4\1\s[10]\0\w4\nThey say she was...\w8\s[22] \f[bold,true]whisk\f[bold,false]\w8-averse!\w8\1\s[19]\w8\w7\n\n... Of course.\e"
 	
-	//"\0\s[7]This is my angry pose.\w8\1\s[17]No YOU shut up!\e"
+	"\1\s[19]Y'know, I swear that weird hat\0\s[0]\1 of yours was it's own thing.\w8\0\s[5]Pff-\w8\s[0] what?\w8\1\s[18]\n\n[half]No,\w2 really,\w4 I remember it-\s[10]\0\s[3]\n\nUhh-\w2 Seriously,\w2 what are you talking about?\w5\s[9]\n\n[half]I think it'd be even more creepy if it was,\w2 like,\w2\s[5] sentient or something,\w5 heh.\w8\1\s[13]\n\n...\w9\w9\w9\w9\s[19]\n\n[half]Ughhhhh...\w6whatever.\e:chain=weirdhatchain"
 	
 	//"\0\s[8]This is my thoughtful pose.\w8\1\s[18]Where did we put that thing?\e"
 	
@@ -232,7 +232,7 @@ RandomTalk : nonoverlap_pool
 	//You can also put in multiple ifs checking for the same thing to vary the responses. In this case, it's checking to see if they're wearing another shell. You don't need to use elseifs for this! Just an if is fine.
 	if nowshell == "slugcat"
 	{
-	""
+	"\0\s[3]Y'know,\w2 as cool as it is to actually have fingers,\w4\s[9]this new height is kinda hard to get used to...\w8\1\s[16]Pff-\w2 sure.\w5 You're just as small as ever.\w8\0\s[2]\n\n[half]Wuh-\w5\n\s[7]You can't even \w1\f[italic,true]make\f[italic,false]\w1 that joke, you're the same size as me!!\w8\1\s[18]\n\nKeep hoping.\w4\0\n\n\f[height,15]WHATEVER!!!!!!!!\f[height,default]\w8 \s[9]\n\n[half]\f[bold,true]UGHHHH.\f[bold,false]\e"
 	
 	}
 	//After the if statement is done, you can continue with dialogue as normal. As you can see, you can move the ifs around in here, it doesn't really matter. You may want to stick them all in one place together if you want to keep track of them, or you can scatter them around your dialogue as you please. It's up to you. These two lines below are just normal random dialogue.
@@ -331,18 +331,25 @@ RandomTalk : nonoverlap_pool
 	//}
 	
 	//Here's another example of multiple responses. This one will let you randomly choose something to say in the middle of a sentence.
-	
 	{
-	"\0\s[0]Choose a color, blue or pink?\w8\1\s[10]What if I say " 
+		"\0\s[5]Okay,\w2 choose a color,\w5\s[0] blue or pink?\w8\1\s[10]Uhh-\w5 "
+		--
+		"\s[18]blue,\w4 I guess?\w8\0\s[5]\n\n[half]\f[bold,true]AAAAAAAAWWWW\f[bold,false],\w2 because \w4\f[italic,true]I'm\f[italic,false]\w4 blue, right?\w8\1\s[10]\n\n[half]Uhh-\w4 no,\w6 I just chose at random.\w8\w8\n You're more green than blue anyways.\w6\0\s[1]\n\nWhat!?\w4\s[7] No I'm not!!!\w8\1\s[19]\n\n[half]Yea you are,\w4 you're green.\w5\0\s[7]\n\n\f[height,15]NO I'M NOT!!!!!\w4 I'M BLUE!!\w8\n\f[bold,true]I'M BLUUUUUEEEEE!!!!\f[bold,false]\f[height,default]"
+		"\s[18]pink,\w4 I guess?\w5\0\s[9]\n\n[half]Ughhh,\w3 BORINGGGG.\w8\nYou just said that because\w2 \f[italic,true]you're\f[italic,false]\w2 pink.\w8\1\s[19]\n\n[half]You literally gave me two options,\w2 what else was I supposed to pick?\w8\0\s[7]\n\nBlue!!!\w6 For me!!!!\n\w8\s[9]Obviously...."
+		--
+		"\e"
+	}
+	{
+	"\0\s[5]Okay,\w2 choose a color,\w5\s[0] blue or pink?\w8\1\s[10]Uhhhh... \w5" 
 	-- //opening dashes
-	"green"
-	"red"
-	"purple"
-	"orange"
-	"yellow"
-	"\s[18]magenta" //Notice here I added a tag for his thoughtful pose. If he chooses magenta, he'll do this pose. You can set up individual expressions for each potential choice this way.
+	"\s[16]green,\w2 heh.\w8\0\s[5]\n\n[half]Aaaaaawwww,\w4 'cus \w2\f[italic,true]I'm\f[italic,false]\w1 green,\w2 right?\w8\1\s[19]\n\n[half]No,\w4 because it wasn't one of the options.\w8\0\s[6]\n\nI'm going to take that as a compliment!\e"
+	"\s[16]red,\w2 heh."
+	"\s[16]purple,\w2 heh."
+	"\s[16]orange,\w2 heh."
+	"\s[16]yellow,\w2 heh."
+	"\s[16]brown, heh.\w8\0\s[5]\n\n[half]Aaaaaawwww,\w4 'cus of my hat,\w2 right?\w8\1\s[19]\n\n[half]No,\w4 because it wasn't one of the options.\w8\0\s[6]\n\nI'm going to take that as a compliment!\e"//Notice here I added a tag for his thoughtful pose. If he chooses magenta, he'll do this pose. You can set up individual expressions for each potential choice this way.
 	-- //closing dashes
-	" instead?\w8\0\n\n[half]\s[2]You can't do that!\w8\1\n\n[half]\s[16]I just did.\w8\0\n\n[half]\s[9]Hmmph...\e" //dialogue ends
+	"\w8\0\s[2]\n\n[half]Uhh-\w2 what??\w5\s[7] That wasn't one of the options!!!\w8\1\n\n[half]\s[16]Well it is now.\w8\0\n\n[half]\s[9]Hmmph...\e" //dialogue ends
 	
 	//You can see that this follows the formula of the above, although there's only one set of multiple responses in here, then Triangle continues with his sentence. You can use this feature in many different ways if you're creative.
 	}
@@ -399,7 +406,7 @@ internetchain
 	
 	"\0\s[6]\0\s[6]Welcome to the internet! \w8\s[20]Put your cares aside! \w4\n\n[half]\s[22]Here's a tip for straining pasta, \s[23]here's a 9 year old who died!\1\s[14]Oh my god... \0\n\s[21]We've got movies, \w2\s[20]and doctors, \w2\s[5]and fantasy spoooorts!! \w2\n\n\s[0]And a bunch of coloured pencil drawings of a \1\s[13]\0\s[0]bunch of the different characters in Harry Potter doing the do \f[height,20]\1\s[12]\0\s[5]WELCOME TO THE \1\s[51]\0\s[5]INTERNET!\f[height,default]\w4\n\n\s[0]Hold on to your socks, \w2\s[20]cus a random guy just kindly sent you photos of his \s[3]\f[height,15]\f[bold,true]\1\s[12]\0\s[3]*HOT DOG.*\f[bold,false]\f[height,default]\w1\n\n\s[3] They are grainy, \w1and offputting... \w1\s[1]He just sent you mooooore!\w1\1\s[10] \w2\1\s[12]\0\s[5] Don't act surprised, \s[20]you know \1\s[19]\0\s[20]you like it, \w1 you \f[height,15]\f[bold,true]*HOGDOG LOVER*!\f[height,default]\f[bold,false] \w4\1\n\nI'm ignoring you.  \e"
 	
-	"\0\s[5]See a man beheaded, get offended see a shrink, \n\n[half]\s[22]Show us pictures of your children, \s[23]tell us every thought you think! \n\s[22]Start a rumor, \s[23]buy a broom \s[21]or send a death threat to a boomer \n \s[22]Or DM a girl and groom her, \s[23]do a zoom or find a tumor in your- \n\n[half]\s[5]Here's a healthy breakfast option!\n\s[21]You should kill your mom! \n\s[22]Here's why women never *FUN TIME* with you!\n\s[23]Here's how you can build a bomb!\n\n[half]\s[1]Which Power Ranger are you?\w4\s[20] Take this quirky quiz! \s[22]Obama sent\s[23] the immig\s[22]rants to vaccin\s[23]ate your kids\s[22]!\w9\w9\w9\1\s[19]...\w2 Are you don-\1\s[12]\0\n\n[half]\s[5] Can I int\1\s[19]\0\s[5]erest you in everything, \w2\s[20]all of the time? \w\s[6]\nA little bit of everything, \w2all of the time? \s[22]\w4\n\nApathy's a tragedy and \w1\s[23]bordom is a crime. \w2\n\n\s[20]Anything and everything, \w3\s[21]all of the time?\w4\s[0]\w9\w9\1\s[10]\n\nDo you want me to applaud you or something?\w8\1\s[19]\0\s[6]\n\nYes!\e:chain=end"
+	"\0\s[5]See a man beheaded, get offended see a shrink, \n\n[half]\s[22]Show us pictures of your children, \s[23]tell us every thought you think! \n\s[22]Start a rumor, \s[23]buy a broom \s[21]or send a death threat to a boomer \n \s[22]Or DM a girl and groom her, \s[23]do a zoom or find a tumor in your- \n\n[half]\s[5]Here's a healthy breakfast option!\n\s[21]You should kill your mom! \n\s[22]Here's why women never *FUN TIME* with you!\n\s[23]Here's how you can build a bomb!\n\n[half]\s[1]Which Power Ranger are you?\w4\s[20] Take this quirky quiz! \s[22]Obama sent\s[23] the immig\s[22]rants to vaccin\s[23]ate your kids\s[22]!\w9\w9\w9\1\s[19]...\w2 Are you don-\1\s[12]\0\n\n[half]\s[5] Can I int\1\s[19]\0\s[5]erest you in everything, \w2\s[20]all of the time? \w4\s[6]\nA little bit of everything, \w2all of the time? \s[22]\w4\n\nApathy's a tragedy and \w1\s[23]bordom is a crime. \w5\n\n\s[20]Anything and everything, \w3\s[21]all of the time?\w4\s[0]\w9\w9\1\s[10]\n\nDo you want me to applaud you or something?\w8\1\s[19]\0\s[6]\n\nYes!\e:chain=end"
 }}CHAIN
 
 glowingchain
@@ -417,6 +424,16 @@ kisschain
 mentalhealthchain
 {{CHAIN
 	"\1\s[13]...\w8\s[10] You can't just believe your depression away, y'know?\w8\0\s[6] I hear you, Mr. Psychiatrist,\w4 but consider...\w8\w8\n\n\s[8] What if...\w6\s[5] I did it anyways?\w8\1\n\n...\w8\s[19] I'm not doing this with you right now.\e:chain-end"
+}}CHAIN
+
+timeloopchain
+{{CHAIN
+	"\0\s[0]\1\s[16]Obviously,\w2 the REAL reason you shouldn't invest in time travel is so you don't accidently trap yourself in a time loop.\w8\0\s[9] I mean, \w2I GUESS... \w4\1\s[18]\n\nSeriously.\w4 Loosing all you once knew,\0\s[0]\1\w2 repeating the same events over and over again until they become like a play in your head,\w4 family and friends reduced to actors on a stage.\n\s[10]Your life has become nothing more than a \0\s[3]\1reppeating pattern. \w4\n\n\s[18]Sure, you could try to switch things up.\w4 Do things differently, \w2act differently,\0\s[4]\1 \w4maybe try to...\w4 change the course of history, or whatever, but it won't REALLY change anything.\w5\n\n\s[10]Sad existence, \w2 really.\w8\0\s[4]\n\nThat's a...\w4 very specific description.\w8\1\s[10]\w8\w9\1\s[16]\n\nI'm just well versed in these things.\w8\e"
+}}CHAIN
+
+weirdhatchain
+{{CHAIN
+	"\1\s[14]...\w9\w9\s[13]It's nothing important,\w4 I guess...\e"
 }}CHAIN
 //You can make chains as long or as shot as you want! Just make sure to end the chain when you're done.
 
@@ -462,8 +479,10 @@ OnMinuteChange //This is what will trigger time-based dialogue for your Ghost.
 		 }
  		 elseif hour == 0 //If the hour is zero, aka midnight. Again, you can change this to whatever hour you want to check for. This section is flexible! You can also add more elseifs if you want to check for other hours.
 		 {
- 			 "\0\s[2]Oh wow, it's midnight!\w8\1\s[16]Boo.\w4\0\n\s[1]\f[height,20]\f[bold,true]Waaaaaaaaaaaaahh!!\f[height,default]\e"
+ 			 "\0\s[2]Oh wow, it's midnight!\w8\1\s[10]Boo.\w2\0\n\s[1]\f[height,20]\f[bold,true]Waaaaaaaaaaaaahh!!\f[height,default]\e"
+			 
  			 "\1\s[18]It's getting late.\w8\0\s[5]Are you scaaaaaaaaaaared?\w8\1\n\s[19]I think \0\s[0]\1\s[19]\w2\f[bold,true]you're \f[bold,false]\w4scared.\w8\w6\0\n\s[0]...\w8\0\s[4]\e"
+			 
  			 "\1\s[18]Why are you still up at midnight?\w8\0\s[7]We don't \1\s[19]\0\s[7]question %(username)'s sleeping habits, Jelicream!\w8\w8\1\n\n[half]\s[18]Go to sleep.\e"
 			// //Then replace the dialogue with what's appropriate.
 		 }

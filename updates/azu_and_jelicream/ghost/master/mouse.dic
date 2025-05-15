@@ -51,6 +51,7 @@ MouseMoveSakura
 				"\0\s[5]Hehe!\e"
 				"\0\s[5]Thank you!\e"
 				"\0\s[5]Awww, \w2you're petting me!\e"
+				"\0\s[5]Pfff-\w3 stooppp!!\e"
 				//Replace these with whatever petting responses you like. You can also add more dialogue here if you want, or cut them down. Though removing them entirely seems a bit counter-intuitive to all that work we've been doing.
  			}
  			elseif reference4 == "Face" //Another area set up by the collisions in surfaces.txt. You can expand this list with as many elseifs as you need depending on how many collisions you've set up.
@@ -86,13 +87,15 @@ MouseMoveKero
 				"\1\s[13]Uhhh, \w4what are you doing?\e"
 				"\1\s[18]If you're trying to pet me, \w8\s[19]dont.\e"
 				"\1\s[19]Wrong area, \w2bud.\e"
+				"\1\s[19]...\w4 Please stop touching my face.\e"
+				"\1\s[19]Eww.\e"
 				//Replace this dialogue with your secondary character's dialogue.
  			}
 			elseif reference4 == "Head" //Like above, put in the name of another collision you set up in surfaces.txt for the secondary character. You can keep adding more elseifs like this for any extra collisions you may have set up.
 			{
-				"\1\s[12]...\w8\s[11]\e"
+				"\1\s[11]...\n\n\w9\w8\f[italic,true](\f[bold,true]AAAAAAAAAAAAAAAAAAAAAAAAAAAAA\f[bold,false])\f[italic,false]\e"
 				"\1\s[11]... \w4What are you trying to do?\e"
-				"\1\s[12]...\w8\s[10]Stop that.\e"
+				"\1\s[11]...\n\n\w8ughhh...\e"
 				//Replace this dialogue as appropriate.
 			}	
  		}

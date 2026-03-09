@@ -106,39 +106,22 @@ OnAiTalk
 
 RandomTalk : nonoverlap_pool
 {
-	//Alright, here is where all your dialogue will go. I hope you studied how to format dialogue carefully in the walkthrough, as there is little here I can help you with. You're going to have to write most of it yourself. So instead, I'll give you a set of examples to look at and perhaps draw inspiration from! You don't have to use any of these of course, you can just wipe everything in RandomTalk and just write your own dialogue by scratch. But if you're new, I'm hoping these will serve as some little stepping stools as you get more used to writing and coding dialogue.
 	
 	"\0\s[6]I'm trying to set up a stand! \w8\s[4]It's been tough so far... \w8\s[5]but my Momma didn't raise a dummy!\w8\1\s[15]You're right! \w4\s[18]She raised a \f[bold,true]psycho\f[bold,false]. \w8\0\n\n[half]\s[7]Hey! \w8\s[9] That's not true...\e"
 	
 	"\0\s[4]I'm feeling kinda down...\w8\1\s[15]Aww, don't be sad! There's hope for everyone! \w8\0\n\s[5] Wow, even me?!\w8\w6\1\n\s[16] No.\w8\0\n\n[half]\s[9] Hmph...\e"
-	
-	//Single lines of dialogue like this are simple and easy to do.
-	
+
 	"\0\s[6]I used to have a pet fish!\w8\1\s[18]Used to? \w8What happened to it?\w2\s[10]\w6\0\n\n\s[3]... \n\w8They looked too tasty...\w8\s[4] I had no choice...\w8\1\n\n\s[19]... \w8What else is new.\e"
 	
 	"\0\s[8]Staying inside is good for anxiety, \w4but not depression. \w4\nand going out is good for depression, \w4but not anxiety...\w8\w6\n\n[half]\s[5] Stand directly in the doorway for peek mental health!\w8\1\s[19] Thats not how it works.\e:chain=mentalhealthchain"
 	
-	//Here is what a simple two line exchange between your characters might look like. Either character can start a piece of dialogue, it doesn't always have to be the main one.
-	
 	"\0\s[0]Why didn't the skeleton go to the party?\w8\n\n[half]Cus' he had no-\w7\s[5]\f[bold,true]body \f[bold,false]\w4to go with!\w8\1\s[19]That wasn't funny.\w8\0\s[9]\n\n[half]You could've at least played along...\e"
-	
-	//Note here that the code comes back to character 0 and spaces out their second statement with \n\n (or \n\n[half]... really whatever spacing looks best in your balloon). This makes it so the next line of dialogue from them is spaced apart from the previous in the balloon, which will make it easier for your user to read.
 	
 	"\1\s[13]Ughh.. my landlord's probably gonna evict me soon.\w8\0\s[7]I dont wanna hear that negative attitude! \w4\s[5]C'mon, \w2look on the bright side!\w8\1\s[19]\n\n[half]... \w8\s[15] Wooo! I'm probably gonna get evicted soon!\w8\0\s[6]\n\n[half]Much better.\w8\1\s[19]\w6\n\n[half]Hah.\e"
 	
-	//As you can see, you can extend a conversation as long as you want by remembering to space things with \n\n as needed.
-	
-	"\0\s[5]Hehe, \w4this one time, I tripped an old lady walking down the street!\w4\w8\1\s[19]You have a serious problem.\w8\0\n\s[6] You call it a problem, \w4I call it a solution!\w8\1\n\s[14]A solution to what?? \w8\0\n\n[half]\s[6]Old people.\e"
-	
-	//Note here that s[0] has become s[1] and s[10] has become s[11]. As I explained in the walkthrough, the \s[] tag determines the pose of your ghost. Poses are defined in surfaces.txt within your shell's folder. If you're following my guidelines for your ghost, you should have around ten poses for each character. You can change the \s[] value depending on what expression you want your ghost to have.
-	
 	"\1\s[18]I could go for a buck right about now...\w8\0\s[7]Jelicream! \1\s[10]\0\s[7]\w4Money can't make you happy!\w8\1\n\s[17]Well it sure as heck isn't gonna make me sad!\w8\0\n\n[half]\s[1]\f[height,20]GASP!!\f[height,default] \w4Jelicream you can't say that!\w8\1\n\n[half]\s[12]Wha- \w6\s[17]I didn't curse??\w8\0\n\s[7]Say sorry right now!\w8\1\n\s[19]... \w8Sorry.\e"
 	
-	//As you can see here, you can change your ghost's expression while they are speaking. This can make their expression vary dynamically depending on what they're talking about.
-	
 	"\0\s[7]Remember, %(username)!\w4\n\n\s[0]If someone's real mean to you, \w2\s[5]find their house and steal all their left socks!\w8\1\s[19]You're crazy.\w8\0\n\n[half]\s[6]Crazy-creative you mean!\e"
-	
-	//You can also change the side character's expression while the other character is talking. Note here that after the surprising statement, Triangle's pose is changed to s[12]. Then the focus is brought back to Girl with the \0 tag and she resumes talking. You can change focus without having the character actually say anything to accomplish just this effect.
 	
 	"\1\s[18]Have you had anything to eat today, %(username)?\w8\0\s[2]Ooooh, \w2\s[5]yea! \w4Like candy!\w8\1\s[19]\nNot like candy.\w5\0\nI looooveeeee candy! \w4\s[0]Especially the really sweet ones,\w2\1\s[10]\0\ like jawbreakers.\w4\s[3]\w8\n\nThough... the last time i ate one, I got a really bad \_a[https://www.youtube.com/watch?v=jF3gbuxXoQk]toothache\_a. \w8\1\s[16]\n\nProbably because you tried to bite straight through it.\w6\0\s[9]\e"
 	
@@ -152,23 +135,9 @@ RandomTalk : nonoverlap_pool
 	
 	"\1\s[19]Y'know, I swear that weird hat\0\s[0]\1 of yours was it's own thing.\w8\0\s[5]Pff-\w8\s[0] what?\w8\1\s[18]\n\n[half]No,\w2 really,\w4 I remember it-\s[10]\0\s[3]\n\nUhh-\w2 Seriously,\w2 what are you talking about?\w5\s[9]\n\n[half]I think it'd be even more creepy if it was,\w2 like,\w2\s[5] sentient or something,\w5 heh.\w8\1\s[13]\n\n...\w9\w9\w9\w9\s[19]\n\n[half]Ughhhhh...\w6whatever.\e:chain=weirdhatchain"
 	
-	//"\0\s[8]This is my thoughtful pose.\w8\1\s[18]Where did we put that thing?\e"
-	
 	"\0\s[3]\w9\w8...\w8\nJelic\1\s[10]\0ream?\w8\s[0]\nWhat if a cartoon said fart?\w4\1\s[19]No.\w4\0\s[2]\nNo, no, no hear me out!\w4\1\s[10]\0\s[5]\n\nWhat if a cartoon-\1\nNo-\0\nkinda stumbled over his words but we kept it in-\1\nNo y-\1\s[19]\0\s[9]\n\nLet me finish Jeli!\w8\n\s[0]What if...\w4 a cartoon said big farts.\w8\1\s[18]\n\nNo,\w3 you're just repeating yourself.\w8\0\s[6]\n\nOkay, okay.\w8\nWhat if...\1\s[19]\w8\w5\n\nUh huh?\w8\w5\0 a cartoon...\w8\w9\1\n...Yeah?\w8\0 said big farts.\w8\1\s[18]\n\nIt's just repetition,\w4 you're using the rythyms of comedy with no punchline.\w8\0\s[9]\n\nWhat do you know?\n\w4 You've never made a joke in your life.\w8\1\s[19]\n\nWhat about when I'm a victim of meaningless violence?\e"
 	
-	//Here's dialogue with all of their poses so you can see them in action. Note how the \s number changes for each of them. They don't have to match of course, you can have one character happy and one character sad and do whatever you like. These are just examples you can rewrite as you like with your own dialogue.
-	
-	"\1\s[13]Ughh, my neighbours are so loud. \w8\0\s[2]Really? \w8\1\n\s[19]Yeah, \0\s[3]\1\w2they're always complaining! \w4\n\n\s[18]Something about \_a[https://www.youtube.com/watch?v=WchseC9aKTU]two trucks\_a? \w8\n\s[19]I dunno...\e"
-	
-	//You can use the \w tag to time your dialogue. \w goes from 1-9, although I usually leave it at 8 to be safe, and while you can't go above 9, you can layer \w tags to add up to higher numbers. Here, \w8 and \w6 combine to make 14.
-	
-	"\0\s[5]Hehe, \w4watch this. \w8\n\s[6]P\w6 - \w6A - \w6U - \w6S - \w6E.\w8\1\s[19]... \w8\w6\0\s[0]\1\s[19]Am I supossed to say something? \w8\0\n\n[half]\s[2] Uh- \w4\s[6]Yes!!\w8\1\n\s[19]Sure.\e"
-	
-	//You can also pause multiple times within sentences, like so. At the end, you can pause between letters if your ghost is spelling something.
-	
-	//"\1\s[10]Here is dialogue on one line.\nHere is dialogue on the next line.\e"
-	
-	//You can use \n to move dialogue down one line, like hitting enter once. 
+	"\1\s[13]Ughh, my neighbours are so loud. \w8\0\s[2]Really? \w8\1\n\s[19]Yeah, \0\s[3]\1\w2they're always complaining! \w4\n\n\s[18]Something about \_a[https://www.youtube.com/watch?v=WchseC9aKTU]two trucks\_a? \w8\n\s[19]I dunno...\e" 
 	
 	//"\0\s[0]This is dialogue referring to %(username).\w8\1\s[10]Hello, %(username).\e"
 	
@@ -234,20 +203,19 @@ RandomTalk : nonoverlap_pool
 	{
 	"\0\s[3]Y'know,\w2 as cool as it is to actually have fingers,\w4\s[9]this new height is kinda hard to get used to...\w8\1\s[16]Pff-\w2 sure.\w5 You're just as small as ever.\w8\0\s[2]\n\n[half]Wuh-\w5\n\s[7]You can't even \w1\f[italic,true]make\f[italic,false]\w1 that joke, you're the same size as me!!\w8\1\s[18]\n\nKeep hoping.\w4\0\n\n\f[height,15]WHATEVER!!!!!!!!\f[height,default]\w8 \s[9]\n\n[half]\f[bold,true]UGHHHH.\f[bold,false]\e"
 	
+	"\0\s[9]\w8...\w8I'm still mad that your tail's longer than mine...\w8\1\s[19]Your're still caught up on that?\w9\w9\s[18]\nLook,\w4 I'm sure it won't stay that way forever, alright?\w8\0\s[4]\n\nB-But Jelicreamie...\1\s[19]\n\nDon't call me that.\0 What if it doesn't grow...?\n\w8What if...\w8\s[2] W-What if I stay short tailed forever!?!?\1\s[51]\n\nThen I'm sure you'll be able to live a happy short-tailed life,\w1 calm down.\0\s[1]\n\nJELICREAMIE YOU DON'T UNDERSTAND!!!\1\s[19]\n\nStill not my name.\0THIS IS AN OUTRAGE!!\w4 I'M A DISGRACE TO SLUG-KIND!!!\w8\n\n\s[4]What will my slug-bretheren think...\w8 I'm doomed..."
 	}
 	//After the if statement is done, you can continue with dialogue as normal. As you can see, you can move the ifs around in here, it doesn't really matter. You may want to stick them all in one place together if you want to keep track of them, or you can scatter them around your dialogue as you please. It's up to you. These two lines below are just normal random dialogue.
 	
 	"\0\s[0]Jelicream... \w8\w4\n\s[5]Hey \1\s[19]\0\Jelicream.\w9\w4\0\s[0]\w9\n\n\s[5]Jelicreeeeeeaammmmm~\1\s[17]\f[height,20]\f[bold,true]WHAT.\f[height,default]\f[bold,false]\0\s[0]\w9\1\s[19]\w9\w6\0\s[5]\n\n...\w8 amogus\w4\1\s[10]\n\n... \w8\s[14]Kill me.\e:chain=kisschain"
 	
-	//"\1\s[10]This is more generic dialogue to be replaced.\w8\0\s[0]Do whatever you like with it.\e"
-	
 	//And here we're going to go back into ifs! You see, you can space out your ifs with normal dialogue if you want, as I just mentioned. Anyway, you can set up if statements to check for a lot of different things! One of the cooler ones I think are ones set to check for time. This one for example checks if the month is December. You can change month to any month you want.
 	
 	if month >= 12
 	{
-		"\0\s[0]This is dialogue for December.\w8\1\s[18]A cold month?\e"
+		//"\0\s[0]This is dialogue for December.\w8\1\s[18]A cold month?\e"
 		
-		"\0\s[0]This is more dialogue for December.\w8\1\s[18]Still cold?\e"
+		//"\0\s[0]This is more dialogue for December.\w8\1\s[18]Still cold?\e"
 	}
 	
 	//So you can use these to check for any number of situations. You can add as many or as few if checks if you want. You can delete these if checks too if you don't want them.
@@ -257,17 +225,17 @@ RandomTalk : nonoverlap_pool
 	//This if checks what day of the week it is. You can check for any day or as many days as you want. Or none. It's up to you.
 	if weekday == 1
 	{
-		"\0\s[5]Monday's my favourite day of the week!\w8\1\s[10]You say that about every day.\e"
+		//"\0\s[5]Monday's my favourite day of the week!\w8\1\s[10]You say that about every day.\e"
 		
-		"\0\s[0]Oh, it's Monday!\w8\1\s[18]That it is.\e"
+		//"\0\s[0]Oh, it's Monday!\w8\1\s[18]That it is.\e"
 	}
 	
 	//This if checks for the time of day as defined in bootend.dic. Do you remember the words used for each chunk of time in GetTimeSlot? These are the same words! You can check for all those times, or none of them and delete this if you want.
 	if timeslot == "earlymorning"
 	{
-		"\1\s[10]You're up early.\e"
+		//"\1\s[10]You're up early.\e"
 		
-		"\0\s[5]Bright and early!\e"
+		//"\0\s[5]Bright and early!\e"
 	}
 	
 	
